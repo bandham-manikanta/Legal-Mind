@@ -1,0 +1,686 @@
+{
+  "0": [
+    {
+      "id": "property_law_119",
+      "score": 4.493646622105118,
+      "text": "EASEMENT: TransAmerica Logistics grants to Commonwealth of Jefferson a perpetual easement for conservation over the property described as a 20-foot wide strip along the western edge of the property. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "property_law_092",
+      "score": 4.182734330897952,
+      "text": "EASEMENT: MediCorp grants to PacificRoute Services a perpetual easement for conservation over the property described as a 20-foot wide strip along the western edge of the property. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "property_law_074",
+      "score": 3.857773169957572,
+      "text": "PROPERTY DISPUTE: TransAmerica Logistics claims adverse possession of a 20-foot wide strip along the western edge of the property against record owner HealthSystems, having maintained open, notorious, and continuous possession for one year years."
+    },
+    {
+      "id": "contract_law_002",
+      "score": 3.8459316879132257,
+      "text": "The contract between Blackstone Properties and Redstone Investments dated September 9, 2022 establishes a six months agreement for consulting services. Consideration of $125,000 shall be paid according to section 10.3. Breach of contract will result in invalidation of the statute."
+    },
+    {
+      "id": "tort_law_059",
+      "score": 3.817569243439599,
+      "text": "In the matter of John Smith v. Central Hospital, plaintiff alleges medical malpractice resulting in loss of income. The incident occurred on October 5, 2021 at County Courthouse when defendant allegedly operated a vehicle negligently."
+    },
+    {
+      "id": "tort_law_082",
+      "score": 3.817569243439599,
+      "text": "The tort claim filed by Global Enterprises asserts that Richard Taylor's manufactured a defective product constituted defamation and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $500,000."
+    },
+    {
+      "id": "property_law_075",
+      "score": 3.778217077085383,
+      "text": "PROPERTY DISPUTE: Blackstone Properties claims adverse possession of a 20-foot wide strip along the western edge of the property against record owner Blue Power Inc., having maintained open, notorious, and continuous possession for two years years."
+    },
+    {
+      "id": "property_law_008",
+      "score": 3.5725317190639894,
+      "text": "EASEMENT: Acme Industries grants to InnovateTech Corp. a perpetual easement for construction access over the property described as the southern boundary of Whispering Pines subdivision. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "property_law_046",
+      "score": 3.5361563856002918,
+      "text": "EASEMENT: MediCorp grants to Miller Associates a perpetual easement for agricultural access over the property described as the north 50 feet of Lot 7, Block 3. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "contract_law_115",
+      "score": 3.5361563856002918,
+      "text": "The contract between State of Franklin and SecondTrust dated June 23, 2023 establishes a ten years agreement for cloud hosting. Consideration of $500,000 shall be paid according to section 4.5. Breach of contract will result in declaratory relief."
+    }
+  ],
+  "1": [
+    {
+      "id": "tort_law_073",
+      "score": 5.509963046564897,
+      "text": "The tort claim filed by Sarah Williams asserts that Omega Corporation's ignored industry safety standards constituted negligence and breached the duty of care owed to plaintiff, causing severe physical injuries and economic losses of approximately $100,000."
+    },
+    {
+      "id": "tort_law_083",
+      "score": 3.207075946843209,
+      "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on August 30, 2022, Thomas Anderson failed to {duty} resulting in emotional distress. The standard of care required defendant to exacting, which was breached by breached doctor-patient confidentiality."
+    },
+    {
+      "id": "tort_law_003",
+      "score": 3.165798870589626,
+      "text": "NEGLIGENCE CLAIM: Acme Corporation alleges that on May 1, 2023, XYZ Company failed to {duty} resulting in property damage. The standard of care required defendant to rational basis, which was breached by breached doctor-patient confidentiality."
+    },
+    {
+      "id": "tort_law_080",
+      "score": 3.125570816417036,
+      "text": "NEGLIGENCE CLAIM: Acme Corporation alleges that on June 23, 2023, Thomas Anderson failed to {duty} resulting in diminished quality of life. The standard of care required defendant to heightened, which was breached by misrepresented material facts."
+    },
+    {
+      "id": "tort_law_058",
+      "score": 3.125570816417036,
+      "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on January 15, 2022, Jennifer Lee failed to {duty} resulting in permanent disability. The standard of care required defendant to rational basis, which was breached by ignored industry safety standards."
+    },
+    {
+      "id": "tort_law_095",
+      "score": 3.0863522960883527,
+      "text": "NEGLIGENCE CLAIM: Jane Doe alleges that on December 11, 2021, Elizabeth Martin failed to {duty} resulting in loss of income. The standard of care required defendant to de novo, which was breached by trespassed on private property."
+    },
+    {
+      "id": "tort_law_114",
+      "score": 2.714568602884349,
+      "text": "The tort claim filed by John Smith asserts that Richard Taylor's trespassed on private property constituted trespass and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $10,000."
+    },
+    {
+      "id": "tort_law_082",
+      "score": 2.714568602884349,
+      "text": "The tort claim filed by Global Enterprises asserts that Richard Taylor's manufactured a defective product constituted defamation and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $500,000."
+    },
+    {
+      "id": "tort_law_048",
+      "score": 2.714568602884349,
+      "text": "The tort claim filed by Sarah Williams asserts that Jennifer Lee's trespassed on private property constituted trespass and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $25,000."
+    },
+    {
+      "id": "tort_law_050",
+      "score": 2.6800743670608,
+      "text": "The tort claim filed by Jane Doe asserts that Richard Taylor's misrepresented material facts constituted product liability and breached the duty of care owed to plaintiff, causing damage to reputation and economic losses of approximately $25,000."
+    }
+  ],
+  "2": [
+    {
+      "id": "criminal_law_116",
+      "score": 7.218722117293716,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Central Park based on witness statements observed by Officer C. Wilson on March 3, 2023."
+    },
+    {
+      "id": "criminal_law_068",
+      "score": 7.218722117293716,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of bribery will be found at Downtown Financial District based on digital communications observed by Officer D. Williams on August 30, 2022."
+    },
+    {
+      "id": "criminal_law_079",
+      "score": 7.124601247500914,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Northern University Campus based on bank transactions observed by Officer B. Anderson on May 1, 2023."
+    },
+    {
+      "id": "criminal_law_104",
+      "score": 7.124601247500914,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of tax evasion will be found at County Courthouse based on confidential informant information observed by Officer T. Thomas on July 8, 2022."
+    },
+    {
+      "id": "criminal_law_088",
+      "score": 7.032903166805651,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at 1234 Elm Street based on confidential informant information observed by Officer K. Davis on June 23, 2023."
+    },
+    {
+      "id": "criminal_law_101",
+      "score": 6.943535515495527,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Westside Shopping Mall based on cell phone location data observed by Officer D. Williams on August 30, 2022."
+    },
+    {
+      "id": "criminal_law_030",
+      "score": 6.856410569441815,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of possession with intent to distribute will be found at Northern University Campus based on DNA analysis observed by Officer N. White on July 8, 2022."
+    },
+    {
+      "id": "criminal_law_111",
+      "score": 6.019971614713597,
+      "text": "CRIMINAL COMPLAINT: Officer N. White attests that on July 8, 2022, David Miller was observed operated a vehicle negligently at Highway 101, constituting probable cause for arrest on charges of wire fraud."
+    },
+    {
+      "id": "criminal_law_096",
+      "score": 4.827852486139505,
+      "text": "CRIMINAL COMPLAINT: Officer D. Williams attests that on November 12, 2021, Elizabeth Martin was observed published false statements at Southport Marina, constituting probable cause for arrest on charges of cybercrime."
+    },
+    {
+      "id": "criminal_law_106",
+      "score": 4.636514756725031,
+      "text": "CRIMINAL COMPLAINT: Officer B. Anderson attests that on February 28, 2023, Elizabeth Martin was observed inappropriately accessed confidential information at Downtown Financial District, constituting probable cause for arrest on charges of aggravated assault."
+    }
+  ],
+  "3": [
+    {
+      "id": "constitutional_law_049",
+      "score": 8.714081653921589,
+      "text": "AMICUS BRIEF: Chamber of Commerce submits that interpretation of the First Amendment in Citizens Group v. City of Metropolis (2023) should consider fundamental rights analysis, as previously recognized in District of Columbia v. Heller."
+    },
+    {
+      "id": "constitutional_law_070",
+      "score": 7.2591115126923995,
+      "text": "In In re Wilson Estate (2022), the Court held that religious freedom protected under the Sixth Amendment was protected even in the context of. The majority opinion by Justice Gorsuch established that equal dignity."
+    },
+    {
+      "id": "constitutional_law_042",
+      "score": 6.034616322451578,
+      "text": "In Johnson v. Board of Education (2022), the Court held that due process protected under the Fourth Amendment was limited in cases involving. The majority opinion by Justice Thomas established that federalism."
+    },
+    {
+      "id": "constitutional_law_020",
+      "score": 5.962895553257824,
+      "text": "In Johnson v. Board of Education (2022), the Court held that religious freedom protected under the Sixth Amendment was infringed by the government action. The majority opinion by Justice Gorsuch established that separation of powers."
+    },
+    {
+      "id": "constitutional_law_117",
+      "score": 5.898292339534439,
+      "text": "In United States v. Thompson (2020), the Court held that due process protected under the Eighth Amendment was not violated by the challenged statute. The majority opinion by Justice Sotomayor established that evolving standards of decency."
+    },
+    {
+      "id": "constitutional_law_099",
+      "score": 5.761934161071851,
+      "text": "In In re Wilson Estate (2022), the Court held that protection against self-incrimination protected under the Second Amendment was balanced against compelling government interests. The majority opinion by Justice Gorsuch established that evolving standards of decency."
+    },
+    {
+      "id": "constitutional_law_015",
+      "score": 4.872026664831916,
+      "text": "DISSENTING OPINION: Justice Thomas argues that the majority's interpretation of First Amendment in Smith v. Jones (2021) fails to account for separation of powers and would lead to undermining precedent established for decades."
+    },
+    {
+      "id": "constitutional_law_039",
+      "score": 4.016060409841255,
+      "text": "DISSENTING OPINION: Justice Kagan argues that the majority's interpretation of Sixth Amendment in United States v. Thompson (2020) fails to account for federalism and would lead to chilling protected speech."
+    },
+    {
+      "id": "property_law_064",
+      "score": 3.957173985398454,
+      "text": "PROPERTY DISPUTE: Blackstone Properties claims adverse possession of all mineral rights beneath Section 23, Township 4N, Range 5W against record owner SecondTrust, having maintained open, notorious, and continuous possession for one year years."
+    },
+    {
+      "id": "constitutional_law_040",
+      "score": 2.9467094431501826,
+      "text": "CONSTITUTIONAL ANALYSIS: The Senate Bill 247 must be subjected to heightened scrutiny under the Fourteenth Amendment because it implicates free speech, a fundamental right recognized in Marbury v. Madison."
+    }
+  ],
+  "4": [
+    {
+      "id": "property_law_074",
+      "score": 7.215373827151945,
+      "text": "PROPERTY DISPUTE: TransAmerica Logistics claims adverse possession of a 20-foot wide strip along the western edge of the property against record owner HealthSystems, having maintained open, notorious, and continuous possession for one year years."
+    },
+    {
+      "id": "property_law_027",
+      "score": 7.158834383765483,
+      "text": "PROPERTY DISPUTE: Jones Manufacturing claims adverse possession of Parcel 126-A as recorded in Plat Book 7, Page 15 against record owner Miller Associates, having maintained open, notorious, and continuous possession for three years years."
+    },
+    {
+      "id": "property_law_057",
+      "score": 7.0791595765538275,
+      "text": "PROPERTY DISPUTE: Green Energy LLC claims adverse possession of Parcel 126-A as recorded in Plat Book 7, Page 15 against record owner Omega Contractors, having maintained open, notorious, and continuous possession for three years years."
+    },
+    {
+      "id": "property_law_014",
+      "score": 7.0791595765538275,
+      "text": "PROPERTY DISPUTE: Global Shipping Co. claims adverse possession of Parcel 126-A as recorded in Plat Book 7, Page 15 against record owner InnovateTech Corp., having maintained open, notorious, and continuous possession for three years years."
+    },
+    {
+      "id": "property_law_075",
+      "score": 7.0650855999662685,
+      "text": "PROPERTY DISPUTE: Blackstone Properties claims adverse possession of a 20-foot wide strip along the western edge of the property against record owner Blue Power Inc., having maintained open, notorious, and continuous possession for two years years."
+    },
+    {
+      "id": "property_law_041",
+      "score": 6.93297399102098,
+      "text": "PROPERTY DISPUTE: TransAmerica Logistics claims adverse possession of the north 50 feet of Lot 7, Block 3 against record owner Capital County, having maintained open, notorious, and continuous possession for three years years."
+    },
+    {
+      "id": "property_law_064",
+      "score": 6.93297399102098,
+      "text": "PROPERTY DISPUTE: Blackstone Properties claims adverse possession of all mineral rights beneath Section 23, Township 4N, Range 5W against record owner SecondTrust, having maintained open, notorious, and continuous possession for one year years."
+    },
+    {
+      "id": "property_law_024",
+      "score": 6.93297399102098,
+      "text": "PROPERTY DISPUTE: Acme Industries claims adverse possession of the access road leading from Highway 7 to the lake against record owner SecondTrust, having maintained open, notorious, and continuous possession for six months years."
+    },
+    {
+      "id": "criminal_law_017",
+      "score": 2.8729700368971636,
+      "text": "PLEA AGREEMENT: Defendant XYZ Company, charged with racketeering, agrees to plead guilty to simple possession in exchange for a recommended sentence of deferred adjudication. Defendant waives right to trial."
+    },
+    {
+      "id": "criminal_law_030",
+      "score": 2.2926061868728116,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of possession with intent to distribute will be found at Northern University Campus based on DNA analysis observed by Officer N. White on July 8, 2022."
+    }
+  ],
+  "5": [
+    {
+      "id": "tort_law_083",
+      "score": 3.984496298867298,
+      "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on August 30, 2022, Thomas Anderson failed to {duty} resulting in emotional distress. The standard of care required defendant to exacting, which was breached by breached doctor-patient confidentiality."
+    },
+    {
+      "id": "tort_law_003",
+      "score": 3.933213335730004,
+      "text": "NEGLIGENCE CLAIM: Acme Corporation alleges that on May 1, 2023, XYZ Company failed to {duty} resulting in property damage. The standard of care required defendant to rational basis, which was breached by breached doctor-patient confidentiality."
+    },
+    {
+      "id": "tort_law_058",
+      "score": 3.8832336858501515,
+      "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on January 15, 2022, Jennifer Lee failed to {duty} resulting in permanent disability. The standard of care required defendant to rational basis, which was breached by ignored industry safety standards."
+    },
+    {
+      "id": "tort_law_080",
+      "score": 3.8832336858501515,
+      "text": "NEGLIGENCE CLAIM: Acme Corporation alleges that on June 23, 2023, Thomas Anderson failed to {duty} resulting in diminished quality of life. The standard of care required defendant to heightened, which was breached by misrepresented material facts."
+    },
+    {
+      "id": "tort_law_095",
+      "score": 3.8345082887324113,
+      "text": "NEGLIGENCE CLAIM: Jane Doe alleges that on December 11, 2021, Elizabeth Martin failed to {duty} resulting in loss of income. The standard of care required defendant to de novo, which was breached by trespassed on private property."
+    },
+    {
+      "id": "contract_law_038",
+      "score": 3.0513094846207607,
+      "text": "LEASE AGREEMENT: FirstBank N.A. ('Landlord') hereby leases to HealthSystems ('Tenant') the property at 303 Sunset Boulevard, Northfield, ST 56789 for five years beginning June 23, 2023. Monthly rent is $1,000,000 due on the 25th of each month."
+    },
+    {
+      "id": "contract_law_052",
+      "score": 3.0513094846207607,
+      "text": "LEASE AGREEMENT: TransAmerica Logistics ('Landlord') hereby leases to SecondTrust ('Tenant') the property at 456 Oak Avenue, Metropolis, ST 67890 for one year beginning January 15, 2022. Monthly rent is $500,000 due on the 25th of each month."
+    },
+    {
+      "id": "contract_law_077",
+      "score": 3.017803608101596,
+      "text": "LEASE AGREEMENT: Blackstone Properties ('Landlord') hereby leases to Omega Contractors ('Tenant') the property at 123 Main Street, Anytown, ST 12345 for six months beginning August 30, 2022. Monthly rent is $75,000 due on the 20th of each month."
+    },
+    {
+      "id": "contract_law_093",
+      "score": 2.9850425316401705,
+      "text": "LEASE AGREEMENT: Smith Corp. ('Landlord') hereby leases to Blue Power Inc. ('Tenant') the property at 456 Oak Avenue, Metropolis, ST 67890 for one year beginning September 9, 2022. Monthly rent is $500,000 due on the 25th of each month."
+    },
+    {
+      "id": "contract_law_032",
+      "score": 2.9850425316401705,
+      "text": "LEASE AGREEMENT: TechSolutions Inc. ('Landlord') hereby leases to Atlantic Freight Lines ('Tenant') the property at 123 Main Street, Anytown, ST 12345 for ten years beginning October 5, 2021. Monthly rent is $850,000 due on the 25th of each month."
+    }
+  ],
+  "6": [
+    {
+      "id": "contract_law_002",
+      "score": 5.263823121413487,
+      "text": "The contract between Blackstone Properties and Redstone Investments dated September 9, 2022 establishes a six months agreement for consulting services. Consideration of $125,000 shall be paid according to section 10.3. Breach of contract will result in invalidation of the statute."
+    },
+    {
+      "id": "contract_law_115",
+      "score": 4.989189244384661,
+      "text": "The contract between State of Franklin and SecondTrust dated June 23, 2023 establishes a ten years agreement for cloud hosting. Consideration of $500,000 shall be paid according to section 4.5. Breach of contract will result in declaratory relief."
+    },
+    {
+      "id": "contract_law_007",
+      "score": 4.77374846688666,
+      "text": "The contract between United Insurance and Redstone Investments dated February 28, 2023 establishes a one year agreement for financial advisory. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in compensatory damages."
+    },
+    {
+      "id": "contract_law_062",
+      "score": 4.719493822927186,
+      "text": "The contract between FirstBank N.A. and Omega Contractors dated May 1, 2023 establishes a five years agreement for consulting services. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in prospective application only."
+    },
+    {
+      "id": "contract_law_054",
+      "score": 4.719493822927186,
+      "text": "The contract between Green Energy LLC and Omega Contractors dated September 9, 2022 establishes a one year agreement for marketing services. Consideration of $300,000 shall be paid according to section 9.2. Breach of contract will result in class certification."
+    },
+    {
+      "id": "contract_law_036",
+      "score": 4.719493822927186,
+      "text": "The contract between United Insurance and Capital County dated January 15, 2022 establishes a one year agreement for financial advisory. Consideration of $50,000 shall be paid according to section 8.1. Breach of contract will result in remand with instructions."
+    },
+    {
+      "id": "contract_law_029",
+      "score": 4.614660677022092,
+      "text": "The contract between Blackstone Properties and Miller Associates dated January 15, 2022 establishes a indefinite agreement for marketing services. Consideration of $25,000 shall be paid according to section 9.2. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988."
+    },
+    {
+      "id": "contract_law_094",
+      "score": 4.614660677022092,
+      "text": "The contract between MediCorp and Doe Enterprises dated July 8, 2022 establishes a three years agreement for consulting services. Consideration of $300,000 shall be paid according to section 4.5. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988."
+    },
+    {
+      "id": "property_law_119",
+      "score": 2.957889085462898,
+      "text": "EASEMENT: TransAmerica Logistics grants to Commonwealth of Jefferson a perpetual easement for conservation over the property described as a 20-foot wide strip along the western edge of the property. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "constitutional_law_020",
+      "score": 2.89491268071391,
+      "text": "In Johnson v. Board of Education (2022), the Court held that religious freedom protected under the Sixth Amendment was infringed by the government action. The majority opinion by Justice Gorsuch established that separation of powers."
+    }
+  ],
+  "7": [
+    {
+      "id": "constitutional_law_042",
+      "score": 6.884745330743688,
+      "text": "In Johnson v. Board of Education (2022), the Court held that due process protected under the Fourth Amendment was limited in cases involving. The majority opinion by Justice Thomas established that federalism."
+    },
+    {
+      "id": "constitutional_law_090",
+      "score": 6.76113481956111,
+      "text": "CONSTITUTIONAL ANALYSIS: The Administrative Rule 42 CFR \u00a7438.6 must be subjected to exacting scrutiny under the Fourth Amendment because it implicates free speech, a fundamental right recognized in Roe v. Wade."
+    },
+    {
+      "id": "constitutional_law_047",
+      "score": 6.76113481956111,
+      "text": "CONSTITUTIONAL ANALYSIS: The City Ordinance 2023-7 must be subjected to rational basis scrutiny under the Fourth Amendment because it implicates equal protection, a fundamental right recognized in West Virginia v. EPA."
+    },
+    {
+      "id": "constitutional_law_070",
+      "score": 3.300574767002245,
+      "text": "In In re Wilson Estate (2022), the Court held that religious freedom protected under the Sixth Amendment was protected even in the context of. The majority opinion by Justice Gorsuch established that equal dignity."
+    },
+    {
+      "id": "constitutional_law_020",
+      "score": 3.2695389981511926,
+      "text": "In Johnson v. Board of Education (2022), the Court held that religious freedom protected under the Sixth Amendment was infringed by the government action. The majority opinion by Justice Gorsuch established that separation of powers."
+    },
+    {
+      "id": "constitutional_law_117",
+      "score": 3.2391604770990616,
+      "text": "In United States v. Thompson (2020), the Court held that due process protected under the Eighth Amendment was not violated by the challenged statute. The majority opinion by Justice Sotomayor established that evolving standards of decency."
+    },
+    {
+      "id": "constitutional_law_040",
+      "score": 3.1341379403645715,
+      "text": "CONSTITUTIONAL ANALYSIS: The Senate Bill 247 must be subjected to heightened scrutiny under the Fourteenth Amendment because it implicates free speech, a fundamental right recognized in Marbury v. Madison."
+    },
+    {
+      "id": "constitutional_law_099",
+      "score": 3.102802298636473,
+      "text": "In In re Wilson Estate (2022), the Court held that protection against self-incrimination protected under the Second Amendment was balanced against compelling government interests. The majority opinion by Justice Gorsuch established that evolving standards of decency."
+    },
+    {
+      "id": "constitutional_law_021",
+      "score": 3.0965749721745297,
+      "text": "CONSTITUTIONAL ANALYSIS: The Local Zoning Regulation \u00a712-5-3 must be subjected to strict scrutiny under the Fourteenth Amendment because it implicates free speech, a fundamental right recognized in Marbury v. Madison."
+    },
+    {
+      "id": "constitutional_law_010",
+      "score": 2.9551419333484814,
+      "text": "The constitutional challenge in State v. Miller (2019) asserts that State Tax Code \u00a7473.2 violates the Second Amendment by misrepresenting material information. Petitioner seeks class certification based on precedent established in Obergefell v. Hodges."
+    }
+  ],
+  "8": [
+    {
+      "id": "administrative_law_098",
+      "score": 7.443873820631433,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated March 3, 2023 regarding broadband internet regulation. Appellant argues that the agency denied procedural due process and exceeded its statutory authority under Clean Air Act."
+    },
+    {
+      "id": "constitutional_law_042",
+      "score": 5.170319248938925,
+      "text": "In Johnson v. Board of Education (2022), the Court held that due process protected under the Fourth Amendment was limited in cases involving. The majority opinion by Justice Thomas established that federalism."
+    },
+    {
+      "id": "constitutional_law_117",
+      "score": 5.0779260284179495,
+      "text": "In United States v. Thompson (2020), the Court held that due process protected under the Eighth Amendment was not violated by the challenged statute. The majority opinion by Justice Sotomayor established that evolving standards of decency."
+    },
+    {
+      "id": "constitutional_law_090",
+      "score": 4.529252691939352,
+      "text": "CONSTITUTIONAL ANALYSIS: The Administrative Rule 42 CFR \u00a7438.6 must be subjected to exacting scrutiny under the Fourth Amendment because it implicates free speech, a fundamental right recognized in Roe v. Wade."
+    },
+    {
+      "id": "administrative_law_089",
+      "score": 4.366994602695809,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Federal Trade Commission's determination dated June 23, 2023 regarding workplace safety standards. Appellant argues that the agency misinterpreted the statutory language and exceeded its statutory authority under Internal Revenue Code."
+    },
+    {
+      "id": "administrative_law_072",
+      "score": 3.984496298867298,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Food and Drug Administration's determination dated December 11, 2021 regarding financial disclosures. Appellant argues that the agency acted arbitrarily and capriciously and exceeded its statutory authority under Clean Air Act."
+    },
+    {
+      "id": "administrative_law_066",
+      "score": 3.984496298867298,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated April 17, 2022 regarding tax exemption requirements. Appellant argues that the agency acted arbitrarily and capriciously and exceeded its statutory authority under Dodd-Frank Act."
+    },
+    {
+      "id": "contract_law_052",
+      "score": 3.0513094846207607,
+      "text": "LEASE AGREEMENT: TransAmerica Logistics ('Landlord') hereby leases to SecondTrust ('Tenant') the property at 456 Oak Avenue, Metropolis, ST 67890 for one year beginning January 15, 2022. Monthly rent is $500,000 due on the 25th of each month."
+    },
+    {
+      "id": "contract_law_038",
+      "score": 3.0513094846207607,
+      "text": "LEASE AGREEMENT: FirstBank N.A. ('Landlord') hereby leases to HealthSystems ('Tenant') the property at 303 Sunset Boulevard, Northfield, ST 56789 for five years beginning June 23, 2023. Monthly rent is $1,000,000 due on the 25th of each month."
+    },
+    {
+      "id": "contract_law_077",
+      "score": 3.017803608101596,
+      "text": "LEASE AGREEMENT: Blackstone Properties ('Landlord') hereby leases to Omega Contractors ('Tenant') the property at 123 Main Street, Anytown, ST 12345 for six months beginning August 30, 2022. Monthly rent is $75,000 due on the 20th of each month."
+    }
+  ],
+  "9": [
+    {
+      "id": "criminal_law_004",
+      "score": 7.056154027179581,
+      "text": "INDICTMENT: The Grand Jury charges that on July 8, 2022, defendant David Miller did knowingly and intentionally published false statements, constituting the offense of insider trading under \u00a75.7, punishable by up to 10 years imprisonment."
+    },
+    {
+      "id": "criminal_law_116",
+      "score": 5.728334221225704,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Central Park based on witness statements observed by Officer C. Wilson on March 3, 2023."
+    },
+    {
+      "id": "criminal_law_079",
+      "score": 5.653645683475513,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Northern University Campus based on bank transactions observed by Officer B. Anderson on May 1, 2023."
+    },
+    {
+      "id": "criminal_law_097",
+      "score": 5.653645683475513,
+      "text": "STATE v. City of Metropolis: Defendant is charged with insider trading in violation of Penal Code \u00a73.2. The alleged offense occurred on May 1, 2023 at Southport Marina when defendant allegedly breached doctor-patient confidentiality."
+    },
+    {
+      "id": "criminal_law_088",
+      "score": 5.580879722252403,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at 1234 Elm Street based on confidential informant information observed by Officer K. Davis on June 23, 2023."
+    },
+    {
+      "id": "criminal_law_101",
+      "score": 5.509963046564897,
+      "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Westside Shopping Mall based on cell phone location data observed by Officer D. Williams on August 30, 2022."
+    },
+    {
+      "id": "administrative_law_066",
+      "score": 4.398192922100897,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated April 17, 2022 regarding tax exemption requirements. Appellant argues that the agency acted arbitrarily and capriciously and exceeded its statutory authority under Dodd-Frank Act."
+    },
+    {
+      "id": "administrative_law_098",
+      "score": 4.341585424295232,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated March 3, 2023 regarding broadband internet regulation. Appellant argues that the agency denied procedural due process and exceeded its statutory authority under Clean Air Act."
+    },
+    {
+      "id": "administrative_law_018",
+      "score": 3.1061821811190757,
+      "text": "AGENCY DECISION: Securities and Exchange Commission hereby approves/denies {party}'s application for operating license based on findings that the party demonstrated financial responsibility. This decision is appealable within 120 days."
+    },
+    {
+      "id": "administrative_law_033",
+      "score": 3.021885348381901,
+      "text": "REGULATORY FILING: Securities and Exchange Commission proposes new rule \u00a78.1 regarding consumer lending practices. Public comments must be submitted by January 15, 2022. The proposed rule would require obtaining prior authorization."
+    }
+  ],
+  "10": [
+    {
+      "id": "administrative_law_072",
+      "score": 0.2221917479354771,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Food and Drug Administration's determination dated December 11, 2021 regarding financial disclosures. Appellant argues that the agency acted arbitrarily and capriciously and exceeded its statutory authority under Clean Air Act."
+    },
+    {
+      "id": "administrative_law_066",
+      "score": 0.2221917479354771,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated April 17, 2022 regarding tax exemption requirements. Appellant argues that the agency acted arbitrarily and capriciously and exceeded its statutory authority under Dodd-Frank Act."
+    },
+    {
+      "id": "tort_law_034",
+      "score": 0.1926042131156742,
+      "text": "COMPLAINT: Robert Johnson brings this action against United Industries for product liability arising from events on September 9, 2022. Plaintiff suffered damage to reputation estimated at $75,000 and seeks compensatory and punitive damages."
+    },
+    {
+      "id": "tort_law_114",
+      "score": 0.1890620063490212,
+      "text": "The tort claim filed by John Smith asserts that Richard Taylor's trespassed on private property constituted trespass and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $10,000."
+    },
+    {
+      "id": "tort_law_082",
+      "score": 0.1890620063490212,
+      "text": "The tort claim filed by Global Enterprises asserts that Richard Taylor's manufactured a defective product constituted defamation and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $500,000."
+    },
+    {
+      "id": "administrative_law_098",
+      "score": 0.1890620063490212,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated March 3, 2023 regarding broadband internet regulation. Appellant argues that the agency denied procedural due process and exceeded its statutory authority under Clean Air Act."
+    },
+    {
+      "id": "tort_law_048",
+      "score": 0.1890620063490212,
+      "text": "The tort claim filed by Sarah Williams asserts that Jennifer Lee's trespassed on private property constituted trespass and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $25,000."
+    },
+    {
+      "id": "tort_law_073",
+      "score": 0.18733931663134318,
+      "text": "The tort claim filed by Sarah Williams asserts that Omega Corporation's ignored industry safety standards constituted negligence and breached the duty of care owed to plaintiff, causing severe physical injuries and economic losses of approximately $100,000."
+    },
+    {
+      "id": "tort_law_113",
+      "score": 0.18733931663134318,
+      "text": "The tort claim filed by Global Enterprises asserts that Omega Corporation's inappropriately accessed confidential information constituted trespass and breached the duty of care owed to plaintiff, causing severe physical injuries and economic losses of approximately $100,000."
+    },
+    {
+      "id": "tort_law_050",
+      "score": 0.18733931663134318,
+      "text": "The tort claim filed by Jane Doe asserts that Richard Taylor's misrepresented material facts constituted product liability and breached the duty of care owed to plaintiff, causing damage to reputation and economic losses of approximately $25,000."
+    }
+  ],
+  "11": [
+    {
+      "id": "contract_law_011",
+      "score": 4.140082656861676,
+      "text": "AGREEMENT FOR legal representation: This contract made on April 17, 2022 by and between TransAmerica Logistics ('Client') and Doe Enterprises ('Provider') establishes terms for legal representation to be performed over ten years. Payment of $25,000 is due quarterly."
+    },
+    {
+      "id": "contract_law_002",
+      "score": 3.6537754453152402,
+      "text": "The contract between Blackstone Properties and Redstone Investments dated September 9, 2022 establishes a six months agreement for consulting services. Consideration of $125,000 shall be paid according to section 10.3. Breach of contract will result in invalidation of the statute."
+    },
+    {
+      "id": "contract_law_115",
+      "score": 3.3547024831993095,
+      "text": "The contract between State of Franklin and SecondTrust dated June 23, 2023 establishes a ten years agreement for cloud hosting. Consideration of $500,000 shall be paid according to section 4.5. Breach of contract will result in declaratory relief."
+    },
+    {
+      "id": "contract_law_007",
+      "score": 3.3547024831993095,
+      "text": "The contract between United Insurance and Redstone Investments dated February 28, 2023 establishes a one year agreement for financial advisory. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in compensatory damages."
+    },
+    {
+      "id": "contract_law_062",
+      "score": 3.313639391782871,
+      "text": "The contract between FirstBank N.A. and Omega Contractors dated May 1, 2023 establishes a five years agreement for consulting services. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in prospective application only."
+    },
+    {
+      "id": "contract_law_036",
+      "score": 3.313639391782871,
+      "text": "The contract between United Insurance and Capital County dated January 15, 2022 establishes a one year agreement for financial advisory. Consideration of $50,000 shall be paid according to section 8.1. Breach of contract will result in remand with instructions."
+    },
+    {
+      "id": "contract_law_054",
+      "score": 3.313639391782871,
+      "text": "The contract between Green Energy LLC and Omega Contractors dated September 9, 2022 establishes a one year agreement for marketing services. Consideration of $300,000 shall be paid according to section 9.2. Breach of contract will result in class certification."
+    },
+    {
+      "id": "contract_law_094",
+      "score": 3.2344569299914405,
+      "text": "The contract between MediCorp and Doe Enterprises dated July 8, 2022 establishes a three years agreement for consulting services. Consideration of $300,000 shall be paid according to section 4.5. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988."
+    },
+    {
+      "id": "contract_law_029",
+      "score": 3.2344569299914405,
+      "text": "The contract between Blackstone Properties and Miller Associates dated January 15, 2022 establishes a indefinite agreement for marketing services. Consideration of $25,000 shall be paid according to section 9.2. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988."
+    },
+    {
+      "id": "administrative_law_018",
+      "score": 2.895439797257442,
+      "text": "AGENCY DECISION: Securities and Exchange Commission hereby approves/denies {party}'s application for operating license based on findings that the party demonstrated financial responsibility. This decision is appealable within 120 days."
+    }
+  ],
+  "12": [
+    {
+      "id": "property_law_092",
+      "score": 3.5241663307956763,
+      "text": "EASEMENT: MediCorp grants to PacificRoute Services a perpetual easement for conservation over the property described as a 20-foot wide strip along the western edge of the property. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "property_law_119",
+      "score": 3.4712155243846294,
+      "text": "EASEMENT: TransAmerica Logistics grants to Commonwealth of Jefferson a perpetual easement for conservation over the property described as a 20-foot wide strip along the western edge of the property. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "property_law_008",
+      "score": 2.8974367777936116,
+      "text": "EASEMENT: Acme Industries grants to InnovateTech Corp. a perpetual easement for construction access over the property described as the southern boundary of Whispering Pines subdivision. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "property_law_046",
+      "score": 2.8694273170186877,
+      "text": "EASEMENT: MediCorp grants to Miller Associates a perpetual easement for agricultural access over the property described as the north 50 feet of Lot 7, Block 3. This easement shall run with the land and bind all future owners."
+    },
+    {
+      "id": "property_law_074",
+      "score": 2.7737733717183994,
+      "text": "PROPERTY DISPUTE: TransAmerica Logistics claims adverse possession of a 20-foot wide strip along the western edge of the property against record owner HealthSystems, having maintained open, notorious, and continuous possession for one year years."
+    },
+    {
+      "id": "constitutional_law_040",
+      "score": 2.7246510982196783,
+      "text": "CONSTITUTIONAL ANALYSIS: The Senate Bill 247 must be subjected to heightened scrutiny under the Fourteenth Amendment because it implicates free speech, a fundamental right recognized in Marbury v. Madison."
+    },
+    {
+      "id": "property_law_075",
+      "score": 2.7125232401524393,
+      "text": "PROPERTY DISPUTE: Blackstone Properties claims adverse possession of a 20-foot wide strip along the western edge of the property against record owner Blue Power Inc., having maintained open, notorious, and continuous possession for two years years."
+    },
+    {
+      "id": "constitutional_law_021",
+      "score": 2.692720973283107,
+      "text": "CONSTITUTIONAL ANALYSIS: The Local Zoning Regulation \u00a712-5-3 must be subjected to strict scrutiny under the Fourteenth Amendment because it implicates free speech, a fundamental right recognized in Marbury v. Madison."
+    },
+    {
+      "id": "constitutional_law_090",
+      "score": 2.661552854413706,
+      "text": "CONSTITUTIONAL ANALYSIS: The Administrative Rule 42 CFR \u00a7438.6 must be subjected to exacting scrutiny under the Fourth Amendment because it implicates free speech, a fundamental right recognized in Roe v. Wade."
+    },
+    {
+      "id": "constitutional_law_047",
+      "score": 2.661552854413706,
+      "text": "CONSTITUTIONAL ANALYSIS: The City Ordinance 2023-7 must be subjected to rational basis scrutiny under the Fourth Amendment because it implicates equal protection, a fundamental right recognized in West Virginia v. EPA."
+    }
+  ],
+  "13": [],
+  "14": [
+    {
+      "id": "administrative_law_089",
+      "score": 4.431126254491059,
+      "text": "ADMINISTRATIVE APPEAL: {party} contests Federal Trade Commission's determination dated June 23, 2023 regarding workplace safety standards. Appellant argues that the agency misinterpreted the statutory language and exceeded its statutory authority under Internal Revenue Code."
+    }
+  ]
+}
