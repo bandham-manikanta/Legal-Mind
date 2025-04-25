@@ -1,5 +1,0 @@
-{
-  "model_name": "nlpaueb/legal-bert-base-uncased",
-  "embedding_dim": 768,
-  "num_documents": 120
-}
