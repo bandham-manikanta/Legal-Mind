@@ -1,0 +1,937 @@
+{
+  "0": {
+    "query": "What are the essential elements of a valid contract?",
+    "results": [
+      {
+        "id": "contract_law_002",
+        "score": -10.19709300994873,
+        "text": "The contract between Blackstone Properties and Redstone Investments dated September 9, 2022 establishes a six months agreement for consulting services. Consideration of $125,000 shall be paid according to section 10.3. Breach of contract will result in invalidation of the statute.",
+        "original_score": 3.8459316879132257
+      },
+      {
+        "id": "contract_law_036",
+        "score": -10.330013275146484,
+        "text": "The contract between United Insurance and Capital County dated January 15, 2022 establishes a one year agreement for financial advisory. Consideration of $50,000 shall be paid according to section 8.1. Breach of contract will result in remand with instructions.",
+        "original_score": 3.284246750337022
+      },
+      {
+        "id": "contract_law_054",
+        "score": -10.350985527038574,
+        "text": "The contract between Green Energy LLC and Omega Contractors dated September 9, 2022 establishes a one year agreement for marketing services. Consideration of $300,000 shall be paid according to section 9.2. Breach of contract will result in class certification.",
+        "original_score": 3.284246750337022
+      },
+      {
+        "id": "contract_law_007",
+        "score": -10.477670669555664,
+        "text": "The contract between United Insurance and Redstone Investments dated February 28, 2023 establishes a one year agreement for financial advisory. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in compensatory damages.",
+        "original_score": 3.320715608102291
+      },
+      {
+        "id": "contract_law_062",
+        "score": -10.557135581970215,
+        "text": "The contract between FirstBank N.A. and Omega Contractors dated May 1, 2023 establishes a five years agreement for consulting services. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in prospective application only.",
+        "original_score": 3.284246750337022
+      },
+      {
+        "id": "contract_law_029",
+        "score": -10.560430526733398,
+        "text": "The contract between Blackstone Properties and Miller Associates dated January 15, 2022 establishes a indefinite agreement for marketing services. Consideration of $25,000 shall be paid according to section 9.2. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988.",
+        "original_score": 3.2137101536486163
+      },
+      {
+        "id": "contract_law_094",
+        "score": -10.563854217529297,
+        "text": "The contract between MediCorp and Doe Enterprises dated July 8, 2022 establishes a three years agreement for consulting services. Consideration of $300,000 shall be paid according to section 4.5. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988.",
+        "original_score": 3.2137101536486163
+      },
+      {
+        "id": "contract_law_115",
+        "score": -10.676626205444336,
+        "text": "The contract between State of Franklin and SecondTrust dated June 23, 2023 establishes a ten years agreement for cloud hosting. Consideration of $500,000 shall be paid according to section 4.5. Breach of contract will result in declaratory relief.",
+        "original_score": 3.5361563856002918
+      },
+      {
+        "id": "tort_law_050",
+        "score": -11.148519515991211,
+        "text": "The tort claim filed by Jane Doe asserts that Richard Taylor's misrepresented material facts constituted product liability and breached the duty of care owed to plaintiff, causing damage to reputation and economic losses of approximately $25,000.",
+        "original_score": 2.5239955537609466
+      },
+      {
+        "id": "tort_law_045",
+        "score": -11.159682273864746,
+        "text": "The tort claim filed by Acme Corporation asserts that United Industries's misrepresented material facts constituted product liability and breached the duty of care owed to plaintiff, causing diminished quality of life and economic losses of approximately $100,000.",
+        "original_score": 2.715714550478026
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.0012600421905517578,
+      "rerank_time": 3.4785964488983154,
+      "total_time": 3.479856491088867
+    }
+  },
+  "1": {
+    "query": "How is negligence defined in tort law?",
+    "results": [
+      {
+        "id": "tort_law_073",
+        "score": 0.04608748480677605,
+        "text": "The tort claim filed by Sarah Williams asserts that Omega Corporation's ignored industry safety standards constituted negligence and breached the duty of care owed to plaintiff, causing severe physical injuries and economic losses of approximately $100,000.",
+        "original_score": 5.509963046564897
+      },
+      {
+        "id": "tort_law_095",
+        "score": -0.979403555393219,
+        "text": "NEGLIGENCE CLAIM: Jane Doe alleges that on December 11, 2021, Elizabeth Martin failed to {duty} resulting in loss of income. The standard of care required defendant to de novo, which was breached by trespassed on private property.",
+        "original_score": 3.0863522960883527
+      },
+      {
+        "id": "tort_law_083",
+        "score": -1.8061351776123047,
+        "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on August 30, 2022, Thomas Anderson failed to {duty} resulting in emotional distress. The standard of care required defendant to exacting, which was breached by breached doctor-patient confidentiality.",
+        "original_score": 3.207075946843209
+      },
+      {
+        "id": "tort_law_003",
+        "score": -1.9412542581558228,
+        "text": "NEGLIGENCE CLAIM: Acme Corporation alleges that on May 1, 2023, XYZ Company failed to {duty} resulting in property damage. The standard of care required defendant to rational basis, which was breached by breached doctor-patient confidentiality.",
+        "original_score": 3.165798870589626
+      },
+      {
+        "id": "tort_law_080",
+        "score": -1.9515013694763184,
+        "text": "NEGLIGENCE CLAIM: Acme Corporation alleges that on June 23, 2023, Thomas Anderson failed to {duty} resulting in diminished quality of life. The standard of care required defendant to heightened, which was breached by misrepresented material facts.",
+        "original_score": 3.125570816417036
+      },
+      {
+        "id": "tort_law_058",
+        "score": -2.271543502807617,
+        "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on January 15, 2022, Jennifer Lee failed to {duty} resulting in permanent disability. The standard of care required defendant to rational basis, which was breached by ignored industry safety standards.",
+        "original_score": 3.125570816417036
+      },
+      {
+        "id": "tort_law_050",
+        "score": -4.102511405944824,
+        "text": "The tort claim filed by Jane Doe asserts that Richard Taylor's misrepresented material facts constituted product liability and breached the duty of care owed to plaintiff, causing damage to reputation and economic losses of approximately $25,000.",
+        "original_score": 2.6800743670608
+      },
+      {
+        "id": "tort_law_045",
+        "score": -4.431681156158447,
+        "text": "The tort claim filed by Acme Corporation asserts that United Industries's misrepresented material facts constituted product liability and breached the duty of care owed to plaintiff, causing diminished quality of life and economic losses of approximately $100,000.",
+        "original_score": 2.64644577336685
+      },
+      {
+        "id": "tort_law_082",
+        "score": -4.683142185211182,
+        "text": "The tort claim filed by Global Enterprises asserts that Richard Taylor's manufactured a defective product constituted defamation and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $500,000.",
+        "original_score": 2.714568602884349
+      },
+      {
+        "id": "tort_law_114",
+        "score": -4.778765678405762,
+        "text": "The tort claim filed by John Smith asserts that Richard Taylor's trespassed on private property constituted trespass and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $10,000.",
+        "original_score": 2.714568602884349
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.0021767616271972656,
+      "rerank_time": 2.9322474002838135,
+      "total_time": 2.9344241619110107
+    }
+  },
+  "2": {
+    "query": "What constitutes probable cause for a search warrant?",
+    "results": [
+      {
+        "id": "criminal_law_104",
+        "score": 6.1525068283081055,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of tax evasion will be found at County Courthouse based on confidential informant information observed by Officer T. Thomas on July 8, 2022.",
+        "original_score": 7.124601247500914
+      },
+      {
+        "id": "criminal_law_030",
+        "score": 6.149271488189697,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of possession with intent to distribute will be found at Northern University Campus based on DNA analysis observed by Officer N. White on July 8, 2022.",
+        "original_score": 6.856410569441815
+      },
+      {
+        "id": "criminal_law_116",
+        "score": 5.327457904815674,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Central Park based on witness statements observed by Officer C. Wilson on March 3, 2023.",
+        "original_score": 7.218722117293716
+      },
+      {
+        "id": "criminal_law_068",
+        "score": 5.167649745941162,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of bribery will be found at Downtown Financial District based on digital communications observed by Officer D. Williams on August 30, 2022.",
+        "original_score": 7.218722117293716
+      },
+      {
+        "id": "criminal_law_088",
+        "score": 5.132603645324707,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at 1234 Elm Street based on confidential informant information observed by Officer K. Davis on June 23, 2023.",
+        "original_score": 7.032903166805651
+      },
+      {
+        "id": "criminal_law_079",
+        "score": 4.50212287902832,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Northern University Campus based on bank transactions observed by Officer B. Anderson on May 1, 2023.",
+        "original_score": 7.124601247500914
+      },
+      {
+        "id": "criminal_law_101",
+        "score": 4.278024196624756,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Westside Shopping Mall based on cell phone location data observed by Officer D. Williams on August 30, 2022.",
+        "original_score": 6.943535515495527
+      },
+      {
+        "id": "criminal_law_096",
+        "score": -1.3140320777893066,
+        "text": "CRIMINAL COMPLAINT: Officer D. Williams attests that on November 12, 2021, Elizabeth Martin was observed published false statements at Southport Marina, constituting probable cause for arrest on charges of cybercrime.",
+        "original_score": 4.827852486139505
+      },
+      {
+        "id": "criminal_law_106",
+        "score": -1.3906235694885254,
+        "text": "CRIMINAL COMPLAINT: Officer B. Anderson attests that on February 28, 2023, Elizabeth Martin was observed inappropriately accessed confidential information at Downtown Financial District, constituting probable cause for arrest on charges of aggravated assault.",
+        "original_score": 4.636514756725031
+      },
+      {
+        "id": "criminal_law_022",
+        "score": -1.5678956508636475,
+        "text": "CRIMINAL COMPLAINT: Officer S. Johnson attests that on July 8, 2022, XYZ Company was observed failed to obtain informed consent at Highway 101, constituting probable cause for arrest on charges of wire fraud.",
+        "original_score": 4.636514756725031
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.0026149749755859375,
+      "rerank_time": 2.62042498588562,
+      "total_time": 2.623039960861206
+    }
+  },
+  "3": {
+    "query": "What rights are protected under the First Amendment?",
+    "results": [
+      {
+        "id": "constitutional_law_049",
+        "score": 3.10314679145813,
+        "text": "AMICUS BRIEF: Chamber of Commerce submits that interpretation of the First Amendment in Citizens Group v. City of Metropolis (2023) should consider fundamental rights analysis, as previously recognized in District of Columbia v. Heller.",
+        "original_score": 8.714081653921589
+      },
+      {
+        "id": "constitutional_law_099",
+        "score": 0.923095703125,
+        "text": "In In re Wilson Estate (2022), the Court held that protection against self-incrimination protected under the Second Amendment was balanced against compelling government interests. The majority opinion by Justice Gorsuch established that evolving standards of decency.",
+        "original_score": 5.761934161071851
+      },
+      {
+        "id": "constitutional_law_070",
+        "score": 0.610529363155365,
+        "text": "In In re Wilson Estate (2022), the Court held that religious freedom protected under the Sixth Amendment was protected even in the context of. The majority opinion by Justice Gorsuch established that equal dignity.",
+        "original_score": 7.2591115126923995
+      },
+      {
+        "id": "constitutional_law_020",
+        "score": 0.5675420165061951,
+        "text": "In Johnson v. Board of Education (2022), the Court held that religious freedom protected under the Sixth Amendment was infringed by the government action. The majority opinion by Justice Gorsuch established that separation of powers.",
+        "original_score": 5.962895553257824
+      },
+      {
+        "id": "constitutional_law_015",
+        "score": -0.52801513671875,
+        "text": "DISSENTING OPINION: Justice Thomas argues that the majority's interpretation of First Amendment in Smith v. Jones (2021) fails to account for separation of powers and would lead to undermining precedent established for decades.",
+        "original_score": 4.872026664831916
+      },
+      {
+        "id": "constitutional_law_090",
+        "score": -1.1316465139389038,
+        "text": "CONSTITUTIONAL ANALYSIS: The Administrative Rule 42 CFR \u00a7438.6 must be subjected to exacting scrutiny under the Fourth Amendment because it implicates free speech, a fundamental right recognized in Roe v. Wade.",
+        "original_score": 2.87758488985268
+      },
+      {
+        "id": "constitutional_law_042",
+        "score": -1.730767011642456,
+        "text": "In Johnson v. Board of Education (2022), the Court held that due process protected under the Fourth Amendment was limited in cases involving. The majority opinion by Justice Thomas established that federalism.",
+        "original_score": 6.034616322451578
+      },
+      {
+        "id": "constitutional_law_040",
+        "score": -1.7829914093017578,
+        "text": "CONSTITUTIONAL ANALYSIS: The Senate Bill 247 must be subjected to heightened scrutiny under the Fourteenth Amendment because it implicates free speech, a fundamental right recognized in Marbury v. Madison.",
+        "original_score": 2.9467094431501826
+      },
+      {
+        "id": "constitutional_law_117",
+        "score": -1.9680023193359375,
+        "text": "In United States v. Thompson (2020), the Court held that due process protected under the Eighth Amendment was not violated by the challenged statute. The majority opinion by Justice Sotomayor established that evolving standards of decency.",
+        "original_score": 5.898292339534439
+      },
+      {
+        "id": "constitutional_law_021",
+        "score": -2.6548357009887695,
+        "text": "CONSTITUTIONAL ANALYSIS: The Local Zoning Regulation \u00a712-5-3 must be subjected to strict scrutiny under the Fourteenth Amendment because it implicates free speech, a fundamental right recognized in Marbury v. Madison.",
+        "original_score": 2.9117247149360876
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.003393411636352539,
+      "rerank_time": 3.7672653198242188,
+      "total_time": 3.7706587314605713
+    }
+  },
+  "4": {
+    "query": "How does adverse possession work in property law?",
+    "results": [
+      {
+        "id": "property_law_075",
+        "score": 0.7919104695320129,
+        "text": "PROPERTY DISPUTE: Blackstone Properties claims adverse possession of a 20-foot wide strip along the western edge of the property against record owner Blue Power Inc., having maintained open, notorious, and continuous possession for two years years.",
+        "original_score": 7.0650855999662685
+      },
+      {
+        "id": "property_law_024",
+        "score": 0.5606985688209534,
+        "text": "PROPERTY DISPUTE: Acme Industries claims adverse possession of the access road leading from Highway 7 to the lake against record owner SecondTrust, having maintained open, notorious, and continuous possession for six months years.",
+        "original_score": 6.93297399102098
+      },
+      {
+        "id": "property_law_074",
+        "score": 0.547925591468811,
+        "text": "PROPERTY DISPUTE: TransAmerica Logistics claims adverse possession of a 20-foot wide strip along the western edge of the property against record owner HealthSystems, having maintained open, notorious, and continuous possession for one year years.",
+        "original_score": 7.215373827151945
+      },
+      {
+        "id": "property_law_027",
+        "score": 0.41562098264694214,
+        "text": "PROPERTY DISPUTE: Jones Manufacturing claims adverse possession of Parcel 126-A as recorded in Plat Book 7, Page 15 against record owner Miller Associates, having maintained open, notorious, and continuous possession for three years years.",
+        "original_score": 7.158834383765483
+      },
+      {
+        "id": "property_law_057",
+        "score": 0.26687419414520264,
+        "text": "PROPERTY DISPUTE: Green Energy LLC claims adverse possession of Parcel 126-A as recorded in Plat Book 7, Page 15 against record owner Omega Contractors, having maintained open, notorious, and continuous possession for three years years.",
+        "original_score": 7.0791595765538275
+      },
+      {
+        "id": "property_law_064",
+        "score": 0.13676750659942627,
+        "text": "PROPERTY DISPUTE: Blackstone Properties claims adverse possession of all mineral rights beneath Section 23, Township 4N, Range 5W against record owner SecondTrust, having maintained open, notorious, and continuous possession for one year years.",
+        "original_score": 6.93297399102098
+      },
+      {
+        "id": "property_law_014",
+        "score": 0.03457710146903992,
+        "text": "PROPERTY DISPUTE: Global Shipping Co. claims adverse possession of Parcel 126-A as recorded in Plat Book 7, Page 15 against record owner InnovateTech Corp., having maintained open, notorious, and continuous possession for three years years.",
+        "original_score": 7.0791595765538275
+      },
+      {
+        "id": "property_law_041",
+        "score": -0.7076437473297119,
+        "text": "PROPERTY DISPUTE: TransAmerica Logistics claims adverse possession of the north 50 feet of Lot 7, Block 3 against record owner Capital County, having maintained open, notorious, and continuous possession for three years years.",
+        "original_score": 6.93297399102098
+      },
+      {
+        "id": "tort_law_114",
+        "score": -8.49570083618164,
+        "text": "The tort claim filed by John Smith asserts that Richard Taylor's trespassed on private property constituted trespass and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $10,000.",
+        "original_score": 1.198463808890221
+      },
+      {
+        "id": "criminal_law_017",
+        "score": -8.508049011230469,
+        "text": "PLEA AGREEMENT: Defendant XYZ Company, charged with racketeering, agrees to plead guilty to simple possession in exchange for a recommended sentence of deferred adjudication. Defendant waives right to trial.",
+        "original_score": 2.8729700368971636
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.0026412010192871094,
+      "rerank_time": 3.3010449409484863,
+      "total_time": 3.3036861419677734
+    }
+  },
+  "5": {
+    "query": "What is the standard for proving defamation?",
+    "results": [
+      {
+        "id": "tort_law_082",
+        "score": -6.059743881225586,
+        "text": "The tort claim filed by Global Enterprises asserts that Richard Taylor's manufactured a defective product constituted defamation and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $500,000.",
+        "original_score": 1.2736025517513176
+      },
+      {
+        "id": "tort_law_083",
+        "score": -9.145557403564453,
+        "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on August 30, 2022, Thomas Anderson failed to {duty} resulting in emotional distress. The standard of care required defendant to exacting, which was breached by breached doctor-patient confidentiality.",
+        "original_score": 3.984496298867298
+      },
+      {
+        "id": "tort_law_080",
+        "score": -9.363380432128906,
+        "text": "NEGLIGENCE CLAIM: Acme Corporation alleges that on June 23, 2023, Thomas Anderson failed to {duty} resulting in diminished quality of life. The standard of care required defendant to heightened, which was breached by misrepresented material facts.",
+        "original_score": 3.8832336858501515
+      },
+      {
+        "id": "constitutional_law_117",
+        "score": -9.405566215515137,
+        "text": "In United States v. Thompson (2020), the Court held that due process protected under the Eighth Amendment was not violated by the challenged statute. The majority opinion by Justice Sotomayor established that evolving standards of decency.",
+        "original_score": 1.6118757812294044
+      },
+      {
+        "id": "tort_law_003",
+        "score": -9.479089736938477,
+        "text": "NEGLIGENCE CLAIM: Acme Corporation alleges that on May 1, 2023, XYZ Company failed to {duty} resulting in property damage. The standard of care required defendant to rational basis, which was breached by breached doctor-patient confidentiality.",
+        "original_score": 3.933213335730004
+      },
+      {
+        "id": "tort_law_095",
+        "score": -9.511536598205566,
+        "text": "NEGLIGENCE CLAIM: Jane Doe alleges that on December 11, 2021, Elizabeth Martin failed to {duty} resulting in loss of income. The standard of care required defendant to de novo, which was breached by trespassed on private property.",
+        "original_score": 3.8345082887324113
+      },
+      {
+        "id": "constitutional_law_099",
+        "score": -9.760787963867188,
+        "text": "In In re Wilson Estate (2022), the Court held that protection against self-incrimination protected under the Second Amendment was balanced against compelling government interests. The majority opinion by Justice Gorsuch established that evolving standards of decency.",
+        "original_score": 1.475517602766816
+      },
+      {
+        "id": "tort_law_058",
+        "score": -9.916008949279785,
+        "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on January 15, 2022, Jennifer Lee failed to {duty} resulting in permanent disability. The standard of care required defendant to rational basis, which was breached by ignored industry safety standards.",
+        "original_score": 3.8832336858501515
+      },
+      {
+        "id": "tort_law_073",
+        "score": -10.058568954467773,
+        "text": "The tort claim filed by Sarah Williams asserts that Omega Corporation's ignored industry safety standards constituted negligence and breached the duty of care owed to plaintiff, causing severe physical injuries and economic losses of approximately $100,000.",
+        "original_score": 1.2619977768804733
+      },
+      {
+        "id": "tort_law_050",
+        "score": -10.065970420837402,
+        "text": "The tort claim filed by Jane Doe asserts that Richard Taylor's misrepresented material facts constituted product liability and breached the duty of care owed to plaintiff, causing damage to reputation and economic losses of approximately $25,000.",
+        "original_score": 1.2619977768804733
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.002413511276245117,
+      "rerank_time": 4.805475950241089,
+      "total_time": 4.807889461517334
+    }
+  },
+  "6": {
+    "query": "What are the remedies for breach of contract?",
+    "results": [
+      {
+        "id": "contract_law_036",
+        "score": -2.119015693664551,
+        "text": "The contract between United Insurance and Capital County dated January 15, 2022 establishes a one year agreement for financial advisory. Consideration of $50,000 shall be paid according to section 8.1. Breach of contract will result in remand with instructions.",
+        "original_score": 4.719493822927186
+      },
+      {
+        "id": "contract_law_007",
+        "score": -3.51918888092041,
+        "text": "The contract between United Insurance and Redstone Investments dated February 28, 2023 establishes a one year agreement for financial advisory. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in compensatory damages.",
+        "original_score": 4.77374846688666
+      },
+      {
+        "id": "contract_law_094",
+        "score": -3.686527729034424,
+        "text": "The contract between MediCorp and Doe Enterprises dated July 8, 2022 establishes a three years agreement for consulting services. Consideration of $300,000 shall be paid according to section 4.5. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988.",
+        "original_score": 4.614660677022092
+      },
+      {
+        "id": "contract_law_115",
+        "score": -4.335361480712891,
+        "text": "The contract between State of Franklin and SecondTrust dated June 23, 2023 establishes a ten years agreement for cloud hosting. Consideration of $500,000 shall be paid according to section 4.5. Breach of contract will result in declaratory relief.",
+        "original_score": 4.989189244384661
+      },
+      {
+        "id": "contract_law_002",
+        "score": -4.397041320800781,
+        "text": "The contract between Blackstone Properties and Redstone Investments dated September 9, 2022 establishes a six months agreement for consulting services. Consideration of $125,000 shall be paid according to section 10.3. Breach of contract will result in invalidation of the statute.",
+        "original_score": 5.263823121413487
+      },
+      {
+        "id": "contract_law_029",
+        "score": -4.571916580200195,
+        "text": "The contract between Blackstone Properties and Miller Associates dated January 15, 2022 establishes a indefinite agreement for marketing services. Consideration of $25,000 shall be paid according to section 9.2. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988.",
+        "original_score": 4.614660677022092
+      },
+      {
+        "id": "contract_law_054",
+        "score": -4.664254665374756,
+        "text": "The contract between Green Energy LLC and Omega Contractors dated September 9, 2022 establishes a one year agreement for marketing services. Consideration of $300,000 shall be paid according to section 9.2. Breach of contract will result in class certification.",
+        "original_score": 4.719493822927186
+      },
+      {
+        "id": "contract_law_062",
+        "score": -4.773317337036133,
+        "text": "The contract between FirstBank N.A. and Omega Contractors dated May 1, 2023 establishes a five years agreement for consulting services. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in prospective application only.",
+        "original_score": 4.719493822927186
+      },
+      {
+        "id": "administrative_law_023",
+        "score": -7.559513092041016,
+        "text": "NOTICE OF VIOLATION: Department of Labor finds that {party} violated \u00a79.2 of {regulation} by operating without proper license on March 3, 2023. Proposed penalty is $2,500,000 unless remedied within 45.",
+        "original_score": 1.5411934604567339
+      },
+      {
+        "id": "administrative_law_016",
+        "score": -8.26196575164795,
+        "text": "NOTICE OF VIOLATION: Department of Health and Human Services finds that {party} violated \u00a78.1 of {regulation} by improper handling of sensitive data on May 1, 2023. Proposed penalty is $25,000 unless remedied within 15.",
+        "original_score": 1.6308555658317567
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.003244161605834961,
+      "rerank_time": 4.246217250823975,
+      "total_time": 4.24946141242981
+    }
+  },
+  "7": {
+    "query": "How does the Fourth Amendment limit police searches?",
+    "results": [
+      {
+        "id": "constitutional_law_090",
+        "score": -5.635302543640137,
+        "text": "CONSTITUTIONAL ANALYSIS: The Administrative Rule 42 CFR \u00a7438.6 must be subjected to exacting scrutiny under the Fourth Amendment because it implicates free speech, a fundamental right recognized in Roe v. Wade.",
+        "original_score": 6.76113481956111
+      },
+      {
+        "id": "constitutional_law_042",
+        "score": -5.818245887756348,
+        "text": "In Johnson v. Board of Education (2022), the Court held that due process protected under the Fourth Amendment was limited in cases involving. The majority opinion by Justice Thomas established that federalism.",
+        "original_score": 6.884745330743688
+      },
+      {
+        "id": "constitutional_law_047",
+        "score": -7.115746974945068,
+        "text": "CONSTITUTIONAL ANALYSIS: The City Ordinance 2023-7 must be subjected to rational basis scrutiny under the Fourth Amendment because it implicates equal protection, a fundamental right recognized in West Virginia v. EPA.",
+        "original_score": 6.76113481956111
+      },
+      {
+        "id": "constitutional_law_099",
+        "score": -10.25070858001709,
+        "text": "In In re Wilson Estate (2022), the Court held that protection against self-incrimination protected under the Second Amendment was balanced against compelling government interests. The majority opinion by Justice Gorsuch established that evolving standards of decency.",
+        "original_score": 3.102802298636473
+      },
+      {
+        "id": "constitutional_law_031",
+        "score": -10.658737182617188,
+        "text": "DISSENTING OPINION: Justice Kavanaugh argues that the majority's interpretation of Tenth Amendment in United States v. Thompson (2020) fails to account for federalism and would lead to expanding executive power beyond constitutional limits.",
+        "original_score": 2.6066300166405503
+      },
+      {
+        "id": "constitutional_law_039",
+        "score": -10.661413192749023,
+        "text": "DISSENTING OPINION: Justice Kagan argues that the majority's interpretation of Sixth Amendment in United States v. Thompson (2020) fails to account for federalism and would lead to chilling protected speech.",
+        "original_score": 2.7141993213826963
+      },
+      {
+        "id": "constitutional_law_020",
+        "score": -10.747645378112793,
+        "text": "In Johnson v. Board of Education (2022), the Court held that religious freedom protected under the Sixth Amendment was infringed by the government action. The majority opinion by Justice Gorsuch established that separation of powers.",
+        "original_score": 3.2695389981511926
+      },
+      {
+        "id": "constitutional_law_117",
+        "score": -10.770318031311035,
+        "text": "In United States v. Thompson (2020), the Court held that due process protected under the Eighth Amendment was not violated by the challenged statute. The majority opinion by Justice Sotomayor established that evolving standards of decency.",
+        "original_score": 3.2391604770990616
+      },
+      {
+        "id": "constitutional_law_040",
+        "score": -10.810018539428711,
+        "text": "CONSTITUTIONAL ANALYSIS: The Senate Bill 247 must be subjected to heightened scrutiny under the Fourteenth Amendment because it implicates free speech, a fundamental right recognized in Marbury v. Madison.",
+        "original_score": 3.1341379403645715
+      },
+      {
+        "id": "constitutional_law_010",
+        "score": -10.867667198181152,
+        "text": "The constitutional challenge in State v. Miller (2019) asserts that State Tax Code \u00a7473.2 violates the Second Amendment by misrepresenting material information. Petitioner seeks class certification based on precedent established in Obergefell v. Hodges.",
+        "original_score": 2.9551419333484814
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.0027036666870117188,
+      "rerank_time": 4.7925779819488525,
+      "total_time": 4.795281648635864
+    }
+  },
+  "8": {
+    "query": "What is the process for appealing an administrative decision?",
+    "results": [
+      {
+        "id": "administrative_law_098",
+        "score": -1.1302201747894287,
+        "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated March 3, 2023 regarding broadband internet regulation. Appellant argues that the agency denied procedural due process and exceeded its statutory authority under Clean Air Act.",
+        "original_score": 7.443873820631433
+      },
+      {
+        "id": "administrative_law_089",
+        "score": -2.0587544441223145,
+        "text": "ADMINISTRATIVE APPEAL: {party} contests Federal Trade Commission's determination dated June 23, 2023 regarding workplace safety standards. Appellant argues that the agency misinterpreted the statutory language and exceeded its statutory authority under Internal Revenue Code.",
+        "original_score": 4.366994602695809
+      },
+      {
+        "id": "administrative_law_066",
+        "score": -2.4380693435668945,
+        "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated April 17, 2022 regarding tax exemption requirements. Appellant argues that the agency acted arbitrarily and capriciously and exceeded its statutory authority under Dodd-Frank Act.",
+        "original_score": 3.984496298867298
+      },
+      {
+        "id": "administrative_law_072",
+        "score": -2.504382610321045,
+        "text": "ADMINISTRATIVE APPEAL: {party} contests Food and Drug Administration's determination dated December 11, 2021 regarding financial disclosures. Appellant argues that the agency acted arbitrarily and capriciously and exceeded its statutory authority under Clean Air Act.",
+        "original_score": 3.984496298867298
+      },
+      {
+        "id": "administrative_law_063",
+        "score": -8.054511070251465,
+        "text": "AGENCY DECISION: Internal Revenue Service hereby approves/denies {party}'s application for discharge permit based on findings that safety concerns could not be adequately addressed. This decision is appealable within 15 days.",
+        "original_score": 1.9740988044550423
+      },
+      {
+        "id": "constitutional_law_090",
+        "score": -8.263819694519043,
+        "text": "CONSTITUTIONAL ANALYSIS: The Administrative Rule 42 CFR \u00a7438.6 must be subjected to exacting scrutiny under the Fourth Amendment because it implicates free speech, a fundamental right recognized in Roe v. Wade.",
+        "original_score": 4.529252691939352
+      },
+      {
+        "id": "administrative_law_018",
+        "score": -8.412910461425781,
+        "text": "AGENCY DECISION: Securities and Exchange Commission hereby approves/denies {party}'s application for operating license based on findings that the party demonstrated financial responsibility. This decision is appealable within 120 days.",
+        "original_score": 2.96752610786779
+      },
+      {
+        "id": "administrative_law_009",
+        "score": -8.505389213562012,
+        "text": "AGENCY DECISION: Securities and Exchange Commission hereby approves/denies {party}'s application for operating license based on findings that safety concerns could not be adequately addressed. This decision is appealable within 45 days.",
+        "original_score": 1.9473118571637138
+      },
+      {
+        "id": "administrative_law_026",
+        "score": -8.6259765625,
+        "text": "AGENCY DECISION: Internal Revenue Service hereby approves/denies {party}'s application for financial services license based on findings that all statutory prerequisites were satisfied. This decision is appealable within 45 days.",
+        "original_score": 2.0016329855276154
+      },
+      {
+        "id": "administrative_law_102",
+        "score": -8.754104614257812,
+        "text": "AGENCY DECISION: Federal Trade Commission hereby approves/denies {party}'s application for tax-exempt status based on findings that public interest considerations warranted approval. This decision is appealable within 120 days.",
+        "original_score": 2.0299461092751243
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.002220630645751953,
+      "rerank_time": 3.819244384765625,
+      "total_time": 3.821465015411377
+    }
+  },
+  "9": {
+    "query": "What constitutes insider trading under securities regulations?",
+    "results": [
+      {
+        "id": "criminal_law_004",
+        "score": 0.7308100461959839,
+        "text": "INDICTMENT: The Grand Jury charges that on July 8, 2022, defendant David Miller did knowingly and intentionally published false statements, constituting the offense of insider trading under \u00a75.7, punishable by up to 10 years imprisonment.",
+        "original_score": 7.056154027179581
+      },
+      {
+        "id": "criminal_law_097",
+        "score": 0.1907818764448166,
+        "text": "STATE v. City of Metropolis: Defendant is charged with insider trading in violation of Penal Code \u00a73.2. The alleged offense occurred on May 1, 2023 at Southport Marina when defendant allegedly breached doctor-patient confidentiality.",
+        "original_score": 5.653645683475513
+      },
+      {
+        "id": "criminal_law_088",
+        "score": -0.9467789530754089,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at 1234 Elm Street based on confidential informant information observed by Officer K. Davis on June 23, 2023.",
+        "original_score": 5.580879722252403
+      },
+      {
+        "id": "criminal_law_079",
+        "score": -1.3807144165039062,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Northern University Campus based on bank transactions observed by Officer B. Anderson on May 1, 2023.",
+        "original_score": 5.653645683475513
+      },
+      {
+        "id": "criminal_law_116",
+        "score": -1.5133001804351807,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Central Park based on witness statements observed by Officer C. Wilson on March 3, 2023.",
+        "original_score": 5.728334221225704
+      },
+      {
+        "id": "criminal_law_084",
+        "score": -2.144869327545166,
+        "text": "PLEA AGREEMENT: Defendant Central Hospital, charged with insider trading, agrees to plead guilty to misdemeanor assault in exchange for a recommended sentence of time served plus community service. Defendant waives right to trial.",
+        "original_score": 2.786291229636358
+      },
+      {
+        "id": "criminal_law_101",
+        "score": -2.6138696670532227,
+        "text": "SEARCH WARRANT application states that probable cause exists to believe evidence of insider trading will be found at Westside Shopping Mall based on cell phone location data observed by Officer D. Williams on August 30, 2022.",
+        "original_score": 5.509963046564897
+      },
+      {
+        "id": "administrative_law_033",
+        "score": -7.286324977874756,
+        "text": "REGULATORY FILING: Securities and Exchange Commission proposes new rule \u00a78.1 regarding consumer lending practices. Public comments must be submitted by January 15, 2022. The proposed rule would require obtaining prior authorization.",
+        "original_score": 3.021885348381901
+      },
+      {
+        "id": "administrative_law_103",
+        "score": -7.933792591094971,
+        "text": "FREEDOM OF INFORMATION REQUEST: {party} requests all documents held by Securities and Exchange Commission relating to broadband internet regulation from November 30, 2019 to October 31, 2022 pursuant to 5 U.S.C. \u00a7552.",
+        "original_score": 2.981429723428355
+      },
+      {
+        "id": "administrative_law_098",
+        "score": -8.194082260131836,
+        "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated March 3, 2023 regarding broadband internet regulation. Appellant argues that the agency denied procedural due process and exceeded its statutory authority under Clean Air Act.",
+        "original_score": 4.341585424295232
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.0020101070404052734,
+      "rerank_time": 1.2338578701019287,
+      "total_time": 1.235867977142334
+    }
+  },
+  "10": {
+    "query": "How are easements created and terminated?",
+    "results": [
+      {
+        "id": "property_law_092",
+        "score": -4.2194366455078125,
+        "text": "EASEMENT: MediCorp grants to PacificRoute Services a perpetual easement for conservation over the property described as a 20-foot wide strip along the western edge of the property. This easement shall run with the land and bind all future owners.",
+        "original_score": 0.1258327733797253
+      },
+      {
+        "id": "property_law_119",
+        "score": -4.831897735595703,
+        "text": "EASEMENT: TransAmerica Logistics grants to Commonwealth of Jefferson a perpetual easement for conservation over the property described as a 20-foot wide strip along the western edge of the property. This easement shall run with the land and bind all future owners.",
+        "original_score": 0.12282588349455618
+      },
+      {
+        "id": "property_law_046",
+        "score": -4.887088298797607,
+        "text": "EASEMENT: MediCorp grants to Miller Associates a perpetual easement for agricultural access over the property described as the north 50 feet of Lot 7, Block 3. This easement shall run with the land and bind all future owners.",
+        "original_score": 0.12739211103405454
+      },
+      {
+        "id": "property_law_008",
+        "score": -5.185656547546387,
+        "text": "EASEMENT: Acme Industries grants to InnovateTech Corp. a perpetual easement for construction access over the property described as the southern boundary of Whispering Pines subdivision. This easement shall run with the land and bind all future owners.",
+        "original_score": 0.12899058068640118
+      },
+      {
+        "id": "contract_law_029",
+        "score": -11.154024124145508,
+        "text": "The contract between Blackstone Properties and Miller Associates dated January 15, 2022 establishes a indefinite agreement for marketing services. Consideration of $25,000 shall be paid according to section 9.2. Breach of contract will result in attorney's fees under 42 U.S.C. \u00a71988.",
+        "original_score": 0.12282588349455618
+      },
+      {
+        "id": "contract_law_036",
+        "score": -11.169225692749023,
+        "text": "The contract between United Insurance and Capital County dated January 15, 2022 establishes a one year agreement for financial advisory. Consideration of $50,000 shall be paid according to section 8.1. Breach of contract will result in remand with instructions.",
+        "original_score": 0.1258327733797253
+      },
+      {
+        "id": "contract_law_011",
+        "score": -11.199090957641602,
+        "text": "AGREEMENT FOR legal representation: This contract made on April 17, 2022 by and between TransAmerica Logistics ('Client') and Doe Enterprises ('Provider') establishes terms for legal representation to be performed over ten years. Payment of $25,000 is due quarterly.",
+        "original_score": 0.18398643213641658
+      },
+      {
+        "id": "contract_law_002",
+        "score": -11.24492073059082,
+        "text": "The contract between Blackstone Properties and Redstone Investments dated September 9, 2022 establishes a six months agreement for consulting services. Consideration of $125,000 shall be paid according to section 10.3. Breach of contract will result in invalidation of the statute.",
+        "original_score": 0.12431114811940076
+      },
+      {
+        "id": "contract_law_007",
+        "score": -11.246821403503418,
+        "text": "The contract between United Insurance and Redstone Investments dated February 28, 2023 establishes a one year agreement for financial advisory. Consideration of $25,000 shall be paid according to section 8.1. Breach of contract will result in compensatory damages.",
+        "original_score": 0.12739211103405454
+      },
+      {
+        "id": "contract_law_115",
+        "score": -11.250663757324219,
+        "text": "The contract between State of Franklin and SecondTrust dated June 23, 2023 establishes a ten years agreement for cloud hosting. Consideration of $500,000 shall be paid according to section 4.5. Breach of contract will result in declaratory relief.",
+        "original_score": 0.12739211103405454
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.001992464065551758,
+      "rerank_time": 1.8679215908050537,
+      "total_time": 1.8699140548706055
+    }
+  },
+  "11": {
+    "query": "What is the difference between murder and manslaughter?",
+    "results": [
+      {
+        "id": "criminal_law_056",
+        "score": -10.886125564575195,
+        "text": "INDICTMENT: The Grand Jury charges that on December 11, 2021, defendant David Miller did knowingly and intentionally operated a vehicle negligently, constituting the offense of cybercrime under \u00a710.3, punishable by up to life imprisonment.",
+        "original_score": 1.4194588204149057
+      },
+      {
+        "id": "tort_law_091",
+        "score": -10.914422988891602,
+        "text": "In the matter of Mary Thompson v. Jennifer Lee, plaintiff alleges medical malpractice resulting in medical expenses. The incident occurred on February 28, 2023 at Midtown Medical Center when defendant allegedly operated a vehicle negligently.",
+        "original_score": 1.2736025517513176
+      },
+      {
+        "id": "tort_law_083",
+        "score": -10.919172286987305,
+        "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on August 30, 2022, Thomas Anderson failed to {duty} resulting in emotional distress. The standard of care required defendant to exacting, which was breached by breached doctor-patient confidentiality.",
+        "original_score": 0.9029244283494827
+      },
+      {
+        "id": "tort_law_059",
+        "score": -10.926595687866211,
+        "text": "In the matter of John Smith v. Central Hospital, plaintiff alleges medical malpractice resulting in loss of income. The incident occurred on October 5, 2021 at County Courthouse when defendant allegedly operated a vehicle negligently.",
+        "original_score": 1.2736025517513176
+      },
+      {
+        "id": "tort_law_095",
+        "score": -10.944700241088867,
+        "text": "NEGLIGENCE CLAIM: Jane Doe alleges that on December 11, 2021, Elizabeth Martin failed to {duty} resulting in loss of income. The standard of care required defendant to de novo, which was breached by trespassed on private property.",
+        "original_score": 0.8689357311209728
+      },
+      {
+        "id": "tort_law_082",
+        "score": -10.955144882202148,
+        "text": "The tort claim filed by Global Enterprises asserts that Richard Taylor's manufactured a defective product constituted defamation and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $500,000.",
+        "original_score": 1.4626645581003388
+      },
+      {
+        "id": "tort_law_114",
+        "score": -10.955707550048828,
+        "text": "The tort claim filed by John Smith asserts that Richard Taylor's trespassed on private property constituted trespass and breached the duty of care owed to plaintiff, causing property damage and economic losses of approximately $10,000.",
+        "original_score": 1.4626645581003388
+      },
+      {
+        "id": "tort_law_078",
+        "score": -10.970346450805664,
+        "text": "In the matter of Robert Johnson v. Central Hospital, plaintiff alleges nuisance resulting in pain and suffering. The incident occurred on June 23, 2023 at Northern University Campus when defendant allegedly failed to obtain informed consent.",
+        "original_score": 1.3926274509773287
+      },
+      {
+        "id": "tort_law_073",
+        "score": -10.98437786102295,
+        "text": "The tort claim filed by Sarah Williams asserts that Omega Corporation's ignored industry safety standards constituted negligence and breached the duty of care owed to plaintiff, causing severe physical injuries and economic losses of approximately $100,000.",
+        "original_score": 1.4493370935118164
+      },
+      {
+        "id": "criminal_law_105",
+        "score": -11.00020980834961,
+        "text": "STATE v. Omega Corporation: Defendant is charged with identity theft in violation of Penal Code \u00a75.7. The alleged offense occurred on June 23, 2023 at County Courthouse when defendant allegedly ignored industry safety standards.",
+        "original_score": 2.5726436295199706
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.0020928382873535156,
+      "rerank_time": 3.767238140106201,
+      "total_time": 3.7693309783935547
+    }
+  },
+  "12": {
+    "query": "What are the requirements for a valid will?",
+    "results": [
+      {
+        "id": "administrative_law_066",
+        "score": -8.546894073486328,
+        "text": "ADMINISTRATIVE APPEAL: {party} contests Securities and Exchange Commission's determination dated April 17, 2022 regarding tax exemption requirements. Appellant argues that the agency acted arbitrarily and capriciously and exceeded its statutory authority under Dodd-Frank Act.",
+        "original_score": 0.9029244283494827
+      },
+      {
+        "id": "administrative_law_033",
+        "score": -9.008167266845703,
+        "text": "REGULATORY FILING: Securities and Exchange Commission proposes new rule \u00a78.1 regarding consumer lending practices. Public comments must be submitted by January 15, 2022. The proposed rule would require obtaining prior authorization.",
+        "original_score": 0.9396803227591263
+      },
+      {
+        "id": "administrative_law_026",
+        "score": -9.299030303955078,
+        "text": "AGENCY DECISION: Internal Revenue Service hereby approves/denies {party}'s application for financial services license based on findings that all statutory prerequisites were satisfied. This decision is appealable within 45 days.",
+        "original_score": 0.21546988924502025
+      },
+      {
+        "id": "contract_law_002",
+        "score": -9.57107925415039,
+        "text": "The contract between Blackstone Properties and Redstone Investments dated September 9, 2022 establishes a six months agreement for consulting services. Consideration of $125,000 shall be paid according to section 10.3. Breach of contract will result in invalidation of the statute.",
+        "original_score": 2.5979830054154402
+      },
+      {
+        "id": "tort_law_095",
+        "score": -9.690353393554688,
+        "text": "NEGLIGENCE CLAIM: Jane Doe alleges that on December 11, 2021, Elizabeth Martin failed to {duty} resulting in loss of income. The standard of care required defendant to de novo, which was breached by trespassed on private property.",
+        "original_score": 0.8689357311209728
+      },
+      {
+        "id": "contract_law_036",
+        "score": -9.800968170166016,
+        "text": "The contract between United Insurance and Capital County dated January 15, 2022 establishes a one year agreement for financial advisory. Consideration of $50,000 shall be paid according to section 8.1. Breach of contract will result in remand with instructions.",
+        "original_score": 2.2449235699457715
+      },
+      {
+        "id": "administrative_law_000",
+        "score": -9.820384979248047,
+        "text": "REGULATORY FILING: Federal Communications Commission proposes new rule \u00a72.4 regarding broadband internet regulation. Public comments must be submitted by January 15, 2022. The proposed rule would require disclosure of financial interests.",
+        "original_score": 0.9396803227591263
+      },
+      {
+        "id": "administrative_law_001",
+        "score": -9.889434814453125,
+        "text": "REGULATORY FILING: Internal Revenue Service proposes new rule \u00a79.2 regarding financial disclosures. Public comments must be submitted by December 11, 2021. The proposed rule would require quarterly reporting of compliance metrics.",
+        "original_score": 0.9396803227591263
+      },
+      {
+        "id": "administrative_law_067",
+        "score": -9.965987205505371,
+        "text": "REGULATORY FILING: Food and Drug Administration proposes new rule \u00a72.4 regarding merger review procedures. Public comments must be submitted by August 30, 2022. The proposed rule would require installation of monitoring equipment.",
+        "original_score": 0.9271003105048143
+      },
+      {
+        "id": "tort_law_058",
+        "score": -10.028556823730469,
+        "text": "NEGLIGENCE CLAIM: Robert Johnson alleges that on January 15, 2022, Jennifer Lee failed to {duty} resulting in permanent disability. The standard of care required defendant to rational basis, which was breached by ignored industry safety standards.",
+        "original_score": 0.8799773655055108
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.002161264419555664,
+      "rerank_time": 3.4922518730163574,
+      "total_time": 3.494413137435913
+    }
+  },
+  "13": {
+    "query": "How does eminent domain work?",
+    "results": [],
+    "timing": {
+      "retrieve_time": 0.0013432502746582031,
+      "rerank_time": 5.245208740234375e-06,
+      "total_time": 0.0013484954833984375
+    }
+  },
+  "14": {
+    "query": "What constitutes workplace discrimination?",
+    "results": [
+      {
+        "id": "administrative_law_089",
+        "score": -6.6064887046813965,
+        "text": "ADMINISTRATIVE APPEAL: {party} contests Federal Trade Commission's determination dated June 23, 2023 regarding workplace safety standards. Appellant argues that the agency misinterpreted the statutory language and exceeded its statutory authority under Internal Revenue Code.",
+        "original_score": 4.431126254491059
+      }
+    ],
+    "timing": {
+      "retrieve_time": 0.0009047985076904297,
+      "rerank_time": 0.05255532264709473,
+      "total_time": 0.053460121154785156
+    }
+  }
+}

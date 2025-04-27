@@ -1,0 +1,56 @@
+{
+  "timing_stats": {
+    "BM25_Reranker": {
+      "method": "BM25_Reranker",
+      "avg_retrieve_time": 0.0022115389506022136,
+      "avg_rerank_time": 2.945128313700358,
+      "avg_total_time": 2.9473398526509604,
+      "min_total_time": 0.0013484954833984375,
+      "max_total_time": 4.807889461517334
+    },
+    "Dense_Reranker": {
+      "method": "Dense_Reranker",
+      "avg_retrieve_time": 2.4715195337931317,
+      "avg_rerank_time": 5.338617595036824,
+      "avg_total_time": 7.810137128829956,
+      "min_total_time": 5.93341588973999,
+      "max_total_time": 10.084335327148438
+    }
+  },
+  "query_counts": {
+    "BM25_Reranker": {
+      "What are the essential elements of a valid contract?": 10,
+      "How is negligence defined in tort law?": 10,
+      "What constitutes probable cause for a search warrant?": 10,
+      "What rights are protected under the First Amendment?": 10,
+      "How does adverse possession work in property law?": 10,
+      "What is the standard for proving defamation?": 10,
+      "What are the remedies for breach of contract?": 10,
+      "How does the Fourth Amendment limit police searches?": 10,
+      "What is the process for appealing an administrative decision?": 10,
+      "What constitutes insider trading under securities regulations?": 10,
+      "How are easements created and terminated?": 10,
+      "What is the difference between murder and manslaughter?": 10,
+      "What are the requirements for a valid will?": 10,
+      "How does eminent domain work?": 0,
+      "What constitutes workplace discrimination?": 1
+    },
+    "Dense_Reranker": {
+      "What are the essential elements of a valid contract?": 10,
+      "How is negligence defined in tort law?": 10,
+      "What constitutes probable cause for a search warrant?": 10,
+      "What rights are protected under the First Amendment?": 10,
+      "How does adverse possession work in property law?": 10,
+      "What is the standard for proving defamation?": 10,
+      "What are the remedies for breach of contract?": 10,
+      "How does the Fourth Amendment limit police searches?": 10,
+      "What is the process for appealing an administrative decision?": 10,
+      "What constitutes insider trading under securities regulations?": 10,
+      "How are easements created and terminated?": 10,
+      "What is the difference between murder and manslaughter?": 10,
+      "What are the requirements for a valid will?": 10,
+      "How does eminent domain work?": 10,
+      "What constitutes workplace discrimination?": 10
+    }
+  }
+}
