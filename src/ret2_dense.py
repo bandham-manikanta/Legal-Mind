@@ -11,6 +11,7 @@ from transformers import AutoModel, AutoTokenizer
 
 # Copy from dense_retriever.py, but omit the code that runs at import time
 class DenseRetriever:
+    """Dense retriever class"""
     def __init__(self, model_name="nlpaueb/legal-bert-base-uncased", index_name="legal_dense_index"):
         self.model_name = model_name
         self.index_name = index_name
