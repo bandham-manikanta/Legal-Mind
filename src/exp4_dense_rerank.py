@@ -48,6 +48,12 @@ class DenseRerankerPipeline:
         # Step 1: Dense Retrieval
         retrieve_start = time.time()
         initial_results = self.retriever.retrieve(query, k=self.retriever_k)
+        print('=' * 20)
+        print('Dense Retriever results:')
+        print('\t', 'ID : Text')
+        for i in initial_results[:5]:
+            print('\t',i['id'], ':', i['text'][:50])
+        print('=' * 20)
         retrieve_end = time.time()
         timing['retrieve_time'] = retrieve_end - retrieve_start
 
@@ -64,6 +70,13 @@ class DenseRerankerPipeline:
         rerank_end = time.time()
         timing['rerank_time'] = rerank_end - rerank_start
         timing['total_time'] = timing['retrieve_time'] + timing['rerank_time']
+
+        print('=' * 20)
+        print('Reranked results:')
+        print('\t', 'ID : Text')
+        for i in reranked_results[:10]:
+            print('\t',i['id'], ':', i['text'][:50])
+        print('=' * 20)
 
         print(f"Reranked to {len(reranked_results)} documents")
 

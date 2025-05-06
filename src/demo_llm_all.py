@@ -90,6 +90,12 @@ def build_prompt(query, context_docs):
     )
     return prompt
 
+def break_sentence(sentence, words_per_line=10):
+    words = sentence.split()
+    for i in range(0, len(words), words_per_line):
+        print(' '.join(words[i:i + words_per_line]))
+
+
 def run_all(query: str):
     """..."""
     # ---- 6-A build four contexts -----------------------------------------
@@ -109,180 +115,180 @@ def run_all(query: str):
     print("="*120 + "\n")
 
     # --- Group 1: BM-25 Context ---
-    print("--- Using BM-25 Context ---")
+    # print("--- Using BM-25 Context ---")
     current_context = ctx_bm25
 
     prompt = build_prompt(query, current_context)
     
-    # Nemotron
-    title = "BM25  →  Nemotron-70B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = nemotron.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Nemotron
+    # title = "BM25  →  Nemotron-70B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = nemotron.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # Llama-3
-    title = "BM25  →  Llama-3-70B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = llama3.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Llama-3
+    # title = "BM25  →  Llama-3-70B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = llama3.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # falcon
-    title = "BM25  →  falcon-7B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = falcon.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # falcon
+    # title = "BM25  →  falcon-7B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = falcon.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # Deepseek
-    title = "BM25  →  Deepseek-7B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = deepseek.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Deepseek
+    # title = "BM25  →  Deepseek-7B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = deepseek.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # --- Group 2: Dense Context ---
-    print("--- Using Dense Context ---")
-    current_context = ctx_dense
+    # # --- Group 2: Dense Context ---
+    # print("--- Using Dense Context ---")
+    # current_context = ctx_dense
 
-    # Nemotron
-    title = "Dense →  Nemotron-70B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = nemotron.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Nemotron
+    # title = "Dense →  Nemotron-70B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = nemotron.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # Llama-3
-    title = "Dense →  Llama-3-70B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = llama3.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Llama-3
+    # title = "Dense →  Llama-3-70B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = llama3.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # falcon
-    title = "Dense →  falcon-7B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = falcon.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # falcon
+    # title = "Dense →  falcon-7B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = falcon.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # Deepseek
-    title = "Dense →  Deepseek-7B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = deepseek.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Deepseek
+    # title = "Dense →  Deepseek-7B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = deepseek.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
 
-    # --- Group 3: BM-25 + Rerank Context ---
-    print("--- Using BM-25 + Rerank Context ---")
-    current_context = ctx_bm25_rerank
+    # # --- Group 3: BM-25 + Rerank Context ---
+    # print("--- Using BM-25 + Rerank Context ---")
+    # current_context = ctx_bm25_rerank
 
-    # Nemotron
-    title = "BM25+RR → Nemotron-70B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = nemotron.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Nemotron
+    # title = "BM25+RR → Nemotron-70B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = nemotron.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # Llama-3
-    title = "BM25+RR → Llama-3-70B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = llama3.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Llama-3
+    # title = "BM25+RR → Llama-3-70B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = llama3.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # falcon
-    title = "BM25+RR → falcon-7B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = falcon.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # falcon
+    # title = "BM25+RR → falcon-7B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = falcon.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # Deepseek
-    title = "BM25+RR → Deepseek-7B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = deepseek.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Deepseek
+    # title = "BM25+RR → Deepseek-7B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = deepseek.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
 
     # --- Group 4: Dense + Rerank Context ---
     print("--- Using Dense + Rerank Context ---")
     current_context = ctx_dense_rerank
 
-    # Nemotron
-    title = "Dense+RR → Nemotron-70B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = nemotron.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Nemotron
+    # title = "Dense+RR → Nemotron-70B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = nemotron.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
     # Llama-3
     title = "Dense+RR → Llama-3-70B"
@@ -291,41 +297,43 @@ def run_all(query: str):
         start_llm = time.time()
         result = llama3.generate(prompt)
         print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+        print(f"  Reasoning: ")
+        reasoning = result.get('reasoning', 'ERROR: Key missing')
+        break_sentence(reasoning, words_per_line=15)
         print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
     except Exception as e:
         print(f"  ERROR: {e}\n")
 
-    # falcon
-    title = "Dense+RR → falcon-7B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = falcon.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # falcon
+    # title = "Dense+RR → falcon-7B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = falcon.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
-    # Deepseek
-    title = "Dense+RR → Deepseek-7B"
-    print(title)
-    try:
-        start_llm = time.time()
-        result = deepseek.generate(prompt)
-        print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
-        print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
-        print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
-    except Exception as e:
-        print(f"  ERROR: {e}\n")
+    # # Deepseek
+    # title = "Dense+RR → Deepseek-7B"
+    # print(title)
+    # try:
+    #     start_llm = time.time()
+    #     result = deepseek.generate(prompt)
+    #     print(f"  Answer:    {result.get('answer', 'ERROR: Key missing')}")
+    #     print(f"  Reasoning: {result.get('reasoning', 'ERROR: Key missing')}")
+    #     print(f"  (Time: {time.time() - start_llm:.1f}s)\n")
+    # except Exception as e:
+    #     print(f"  ERROR: {e}\n")
 
 # ---------------------------------------------------------------------------
 #  7.  Script entry-point
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
     user_query = " ".join(sys.argv[1:]) or \
-                 "What is the standard for reviewing a jury instruction?"
+                 "Does the First Amendment protect freedom of speech?"
 
     t0 = time.time()
     run_all(user_query)
