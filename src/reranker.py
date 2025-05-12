@@ -1,87 +1,121 @@
 # reranker.py
-import json
-import os
-from typing import Any, Dict, List, Tuple
-
-import numpy as np
 import torch
-from sentence_transformers import CrossEncoder
+from typing import Dict, List, Optional, Union, Any
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from tqdm import tqdm
-
 
 class LegalCrossEncoder:
     """
-    Cross-encoder reranker for legal documents that processes query-document pairs
-    to provide more precise relevance scores.
+    Cross-encoder reranker for legal text.
+    Uses a pretrained transformer model to rerank documents.
     """
-    
-    def __init__(self, model_name="cross-encoder/ms-marco-MiniLM-L-6-v2", max_length=512, device=None):
+    def __init__(self, model_name="cross-encoder/ms-marco-MiniLM-L-6-v2", max_length=512, 
+                 device=None, batch_size=8):
         """
-        Initialize the cross-encoder reranker.
+        Initialize the reranker with a pretrained model.
         
         Args:
-            model_name: Pre-trained cross-encoder model to use
-            max_length: Maximum sequence length for encoding
-            device: Computing device (cpu or cuda)
+            model_name: Name of the pretrained cross-encoder model
+            max_length: Maximum input length for the model
+            device: Device to run the model on (None for auto-detection)
+            batch_size: Batch size for inference
         """
         self.model_name = model_name
         self.max_length = max_length
-        self.device = device if device else ('cuda' if torch.cuda.is_available() else 'cpu')
-        print(f"Initializing cross-encoder reranker with model {model_name} on {self.device}")
+        self.batch_size = batch_size
         
-        # Initialize cross-encoder model
-        self.model = CrossEncoder(
-            model_name=model_name,
-            max_length=max_length,
-            device=self.device
-        )
+        # Determine device
+        if device is None:
+            self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        else:
+            self.device = device
+            
+        print(f"Loading reranker model: {model_name}")
+        print(f"Using device: {self.device}")
         
-    def rerank(self, query: str, documents: List[Dict], top_k: int = None, batch_size: int = 32) -> List[Dict]:
+        # Load model and tokenizer
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModelForSequenceClassification.from_pretrained(model_name).to(self.device)
+        self.model.eval()  # Set to evaluation mode
+        
+    def score_pairs(self, query: str, passages: List[str]) -> List[float]:
         """
-        Rerank documents based on their relevance to the query.
+        Score query-passage pairs using the cross-encoder model.
         
         Args:
-            query: User query string
-            documents: List of documents from first-stage retriever
-            top_k: Number of top results to return
-            batch_size: Batch size for inference
+            query: Query string
+            passages: List of passage strings to score
             
         Returns:
-            List of reranked documents with updated scores
+            List of relevance scores for each query-passage pair
+        """
+        # Prepare input pairs
+        features = []
+        for passage in passages:
+            features.append((query, passage))
+        
+        # Process in batches
+        all_scores = []
+        for i in range(0, len(features), self.batch_size):
+            batch_features = features[i:i+self.batch_size]
+            
+            # Tokenize
+            inputs = self.tokenizer(
+                batch_features,
+                padding=True,
+                truncation=True,
+                return_tensors="pt",
+                max_length=self.max_length
+            ).to(self.device)
+            
+            # Score
+            with torch.no_grad():
+                scores = self.model(**inputs).logits
+                
+                # For models with multiple outputs, take the positive class score
+                if scores.shape[1] > 1:
+                    scores = scores[:, 1]  # Take positive class score
+                else:
+                    scores = scores.squeeze(-1)  # For single score output models
+                
+            all_scores.extend(scores.cpu().tolist())
+            
+        return all_scores
+    
+    def rerank(self, query: str, documents: List[Dict[str, Any]], top_k: Optional[int] = None) -> List[Dict[str, Any]]:
+        """
+        Rerank a list of documents using the cross-encoder.
+        
+        Args:
+            query: Query string
+            documents: List of document dictionaries (must contain 'id', 'text', and 'score' fields)
+            top_k: Number of documents to return after reranking (None for all)
+            
+        Returns:
+            List of reranked document dictionaries with updated scores
         """
         if not documents:
             return []
         
-        # Prepare document texts and create query-document pairs
-        text_pairs = []
-        for doc in documents:
-            # Extract document text based on the existing document structure
-            doc_text = doc['text'] if 'text' in doc else str(doc)
-            text_pairs.append([query, doc_text])
-            
-        print(f"Reranking {len(text_pairs)} documents...")
+        # Extract texts for scoring
+        texts = [doc["text"] for doc in documents]
         
-        # Get scores from cross-encoder
-        scores = self.model.predict(
-            text_pairs, 
-            batch_size=batch_size,
-            show_progress_bar=True
-        )
+        # Score documents
+        scores = self.score_pairs(query, texts)
         
-        # Create new document list with updated scores
+        # Create reranked documents with new scores
         reranked_docs = []
         for i, (doc, score) in enumerate(zip(documents, scores)):
-            # Create a new document dict with the same fields as the original
             reranked_doc = doc.copy()
-            reranked_doc['original_score'] = doc['score']  # Keep original score for reference
-            reranked_doc['score'] = float(score)  # Update with cross-encoder score
+            reranked_doc["original_score"] = doc["score"]  # Keep original score
+            reranked_doc["score"] = float(score)  # Update with reranker score
             reranked_docs.append(reranked_doc)
             
-        # Sort by the new score in descending order
-        reranked_docs = sorted(reranked_docs, key=lambda x: x['score'], reverse=True)
+        # Sort by score in descending order
+        reranked_docs = sorted(reranked_docs, key=lambda x: x["score"], reverse=True)
         
-        # Return top_k results if specified
-        if top_k:
+        # Take top-k if specified
+        if top_k is not None:
             reranked_docs = reranked_docs[:top_k]
             
         return reranked_docs

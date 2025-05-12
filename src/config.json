@@ -1,0 +1,23 @@
+{
+  "data_settings": {
+    "data_path": "../data/llm_generated_evaluation_queries_llama3_inscript.jsonl",
+    "bm25_index_dir": "casehold_bm25_index",
+    "dense_index_dir": "casehold_dense_index",
+    "results_dir": "evaluation_results"
+  },
+  "model_settings": {
+    "dense_model": "nlpaueb/legal-bert-base-uncased",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "max_length": 512,
+    "batch_size": 8
+  },
+  "retrieval_settings": {
+    "retriever_k": 100,
+    "reranker_k": 20,
+    "evaluation_k_values": [5, 10, 20]
+  },
+  "evaluation_settings": {
+    "num_queries": 100,
+    "random_seed": 42
+  }
+}

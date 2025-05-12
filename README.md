@@ -60,12 +60,14 @@ python run_experiments.py --exp4  # Dense Retriever + Reranker
 ]
 ```
 
-## Performance Metrics
-Each query processing also returns timing information:
-```json
-{
-  "retrieve_time": 0.125,        // Time for first-stage retrieval (seconds)
-  "rerank_time": 1.345,          // Time for reranking (seconds)
-  "total_time": 1.470            // Total processing time (seconds)
-}
-```
+
+
+
+## Performance Summary - Retrievers
+
+| System             | MAP      | Precision@5 | Precision@10 | Precision@20 | Recall@5 | Recall@10 | Recall@20 | F1@5     | F1@10    | F1@20    | Retrieval Time |
+|--------------------|----------|-------------|--------------|--------------|----------|------------|------------|----------|----------|----------|----------------|
+| BM25               | 0.390435 | 0.186       | 0.095        | 0.0485       | 0.430833 | 0.438333   | 0.448333   | 0.243175 | 0.149096 | 0.085134 | 0.023738       |
+| Dense Retriever    | 0.033664 | 0.018       | 0.012        | 0.0080       | 0.051500 | 0.066000   | 0.081333   | 0.024794 | 0.019130 | 0.014091 | 1.258558       |
+| BM25 + Reranker    | 0.402081 | 0.190       | 0.098        | 0.0490       | 0.445000 | 0.455333   | 0.455333   | 0.249087 | 0.153914 | 0.085977 | 25.488901      |
+| Dense + Reranker   | 0.162739 | 0.068       | 0.035        | 0.0180       | 0.169333 | 0.174333   | 0.176333   | 0.089333 | 0.055089 | 0.031522 | 27.836602      |

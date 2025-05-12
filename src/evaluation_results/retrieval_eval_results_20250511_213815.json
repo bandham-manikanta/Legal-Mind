@@ -1,0 +1,86 @@
+{
+    "BM25": {
+        "system_name": "BM25",
+        "num_queries": 0,
+        "precision_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "recall_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "f1_score_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "map": NaN,
+        "average_retrieval_time": NaN
+    },
+    "Dense Retriever": {
+        "system_name": "Dense Retriever",
+        "num_queries": 0,
+        "precision_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "recall_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "f1_score_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "map": NaN,
+        "average_retrieval_time": NaN
+    },
+    "BM25 + Reranker": {
+        "system_name": "BM25 + Reranker",
+        "num_queries": 0,
+        "precision_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "recall_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "f1_score_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "map": NaN,
+        "average_retrieval_time": NaN
+    },
+    "Dense + Reranker": {
+        "system_name": "Dense + Reranker",
+        "num_queries": 0,
+        "precision_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "recall_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "f1_score_at_k": {
+            "5": NaN,
+            "10": NaN,
+            "20": NaN
+        },
+        "map": NaN,
+        "average_retrieval_time": NaN
+    }
+}
