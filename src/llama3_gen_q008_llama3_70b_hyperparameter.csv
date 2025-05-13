@@ -1,0 +1,36 @@
+temperature,top_p,BLEU,BERTScore,Best Answer,query_id
+0.1,0.5,0.10592012310890636,0.8805096745491028,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion.
+
+Reasoning: As stated in Context 1, ""We will accept a criminal appellant's belated brief to prevent an appeal from being aborted. However, good cause must be shown to grant the motion."" This implies that the court will consider accepting a belated brief if the appellant can demonstrate a valid reason for the delay, such as unforeseen circumstances or extraordinary circumstances beyond their control.",llama3_gen_q008
+0.1,0.7,0.10592012310890636,0.8805096745491028,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion.
+
+Reasoning: As stated in Context 1, ""We will accept a criminal appellant's belated brief to prevent an appeal from being aborted. However, good cause must be shown to grant the motion."" This implies that the court will consider accepting a belated brief if the appellant can demonstrate a valid reason for the delay, such as unforeseen circumstances or extraordinary circumstances beyond their control.",llama3_gen_q008
+0.1,0.9,0.06442138568336851,0.8830816745758057,"Answer: A court will accept a criminal appellant's belated brief to prevent an appeal from being aborted, but only if good cause is shown.
+Reasoning: This is because the court wants to ensure that the appeal is not dismissed due to a technicality, but rather, it wants to consider the merits of the case. However, the appellant must demonstrate a valid reason for the delay in filing the brief, and the court will not accept a belated brief without a sufficient explanation.",llama3_gen_q008
+0.3,0.5,0.0,0.8667369484901428,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion, and the failure to brief an argument constitutes a waiver, but the court may prevent an appeal from being aborted.
+
+Reasoning: This is based on the context provided in Context 1, where the court stated that it will accept a criminal appellant's belated brief to prevent an appeal from being aborted, but good cause must be shown to grant the motion.",llama3_gen_q008
+0.3,0.7,0.0,0.864963948726654,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion, and the failure to brief an argument constitutes a waiver of that issue.
+
+Reasoning: According to Context 1, the court will accept a criminal appellant's belated brief to prevent an appeal from being aborted, but good cause must be shown to grant the motion. In this context, the appellant accepts full responsibility for the failure to file the brief on time, which constitutes good cause. Additionally, the court notes that failure to brief an argument constitutes a waiver of that issue, implying that the court will not consider arguments that were not raised in the brief.",llama3_gen_q008
+0.3,0.9,0.0,0.872489333152771,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion.
+
+Reasoning: As stated in Context 1, a court will accept a criminal appellant's belated brief to prevent an appeal from being aborted, but good cause must be shown to grant the motion. In this context, the appellant accepted full responsibility for the failure to timely file the brief, which constituted good cause to grant the motion.",llama3_gen_q008
+0.5,0.5,0.0,0.8704245686531067,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion, and the failure to brief an argument does not constitute a waiver of the issue.
+
+Reasoning: This is based on the holding in Context 1, where the court accepted the appellant's belated brief because the appellant accepted full responsibility for the failure to timely file the brief, and the court found that the failure to brief an argument did not constitute a waiver of the issue. The court also cited previous cases, such as Brown v. State and Strom v. State, which established that a criminal appellant's belated brief may be accepted to prevent an appeal from being aborted, but only if good cause is shown.",llama3_gen_q008
+0.5,0.7,0.0,0.864803671836853,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion, and the failure to brief an argument does not constitute a waiver of the issue.
+
+Reasoning: This is based on the holding in Context 1, where the court accepted the appellant's belated brief because the appellant accepted full responsibility for the failure to timely file the brief, and the court found that this constituted good cause to grant the motion. Additionally, the court noted that failure to brief an argument does not necessarily constitute a waiver of the issue.",llama3_gen_q008
+0.5,0.9,0.10115068870399559,0.8832387924194336,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion.
+
+Reasoning: As stated in Context 1, ""We will accept a criminal appellant's belated brief to prevent an appeal from being aborted. However, good cause must be shown to grant the motion."" This implies that the court will consider accepting a late brief if the appellant can demonstrate a valid reason for the delay, such as unforeseen circumstances or circumstances beyond their control.",llama3_gen_q008
+0.7,0.5,0.0,0.8717197179794312,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion, and the failure to brief an argument constitutes a waiver of that issue.
+
+Reasoning: According to Context 1, the court will accept a criminal appellant's belated brief to prevent an appeal from being aborted, but good cause must be shown to grant the motion. In this context, good cause is demonstrated by the appellant's acceptance of full responsibility for the failure to timely file the brief, which constitutes good cause to grant the motion.",llama3_gen_q008
+0.7,0.7,0.0,0.8724767565727234,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion, and the failure to brief an argument constitutes a waiver of that argument.
+
+Reasoning: According to Context 1, a court will accept a criminal appellant's belated brief to prevent an appeal from being aborted, but good cause must be shown to grant the motion. Additionally, if an argument is not raised in the brief, it may be considered waived.",llama3_gen_q008
+0.7,0.9,0.0,0.8699910044670105,"Answer: A court will accept a criminal appellant's belated brief if good cause is shown to grant the motion, but the failure to brief an argument constitutes a waiver of that argument.
+
+Reasoning: According to Context 1, the court will accept a criminal appellant's belated brief to prevent an appeal from being aborted, but good cause must be shown to grant the motion. Additionally, the court has held that failure to brief an argument constitutes a waiver of that argument, which implies that the appellant must demonstrate a valid reason for the delay in filing the brief.",llama3_gen_q008
