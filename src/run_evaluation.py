@@ -147,42 +147,63 @@ def create_retrieval_functions(systems):
     
     return retrieval_funcs
 
+# In your run_evaluation function in run_evaluation.py
+
 def run_evaluation(args):
     """Run the evaluation process"""
     # Create necessary directories
-    ensure_dirs([args.bm25_index_dir, args.dense_index_dir, args.results_dir])
-    
+    base_results_dir = getattr(args, 'results_dir', 'evaluation_results_output') # From your code
+    # Define the specific directory for retrieved documents, relative to base_results_dir
+    retrieved_docs_specific_dir = os.path.join(base_results_dir, "retrieved_documents_per_experiment")
+
+    # Ensure all necessary directories exist, including the new one
+    ensure_dirs([args.bm25_index_dir, args.dense_index_dir, base_results_dir, retrieved_docs_specific_dir])
+
     # Initialize retrieval systems
     systems = initialize_retrieval_systems(args)
-    
+
     print("\n2. Preparing evaluation data...\n" + "="*50)
     # Prepare evaluation data
     test_queries, relevance_judgments = prepare_evaluation_data(
-        args.data_path, 
+        args.data_path,
         num_queries=args.num_queries
+        # If you use random_seed in prepare_evaluation_data, pass it from args:
+        # random_seed=getattr(args, 'evaluation_random_seed', 42)
     )
-    
+
     # Create retrieval functions
-    retrieval_funcs = create_retrieval_functions(systems)
-    
+    retrieval_funcs = create_retrieval_functions(systems) # This looks fine
+
     print("\n3. Running evaluation...\n" + "="*50)
     # Initialize evaluator
-    evaluator = RetrievalEvaluator(k_values=args.evaluation_k_values)
-    
+    evaluator = RetrievalEvaluator(k_values=args.evaluation_k_values) # This looks fine
+
     # Evaluate each system
     for system_name, retrieval_func in retrieval_funcs.items():
-        evaluator.evaluate_system(system_name, retrieval_func, test_queries, relevance_judgments)
-    
-    # Compare systems
+        evaluator.evaluate_system(
+            system_name,
+            retrieval_func,
+            test_queries,
+            relevance_judgments,
+            save_retrieved_docs=True,  # <<< PASS THE FLAG TO ENABLE SAVING
+            retrieved_docs_output_dir=retrieved_docs_specific_dir  # <<< PASS THE CORRECT DIRECTORY
+        )
+
+    # Compare systems (This was commented out in your code, which is fine)
     # evaluator.compare_systems()
-    
-    # Save results
+
+    # Save aggregated evaluation metrics (MAP, P@k, etc.)
     timestamp = time.strftime("%Y%m%d_%H%M%S")
-    output_file = os.path.join(args.results_dir, f"retrieval_eval_results_{timestamp}.json")
-    evaluator.save_results(output_file)
-    
+    # Make sure args.results_dir is the base directory you want for metrics files
+    output_file_metrics = os.path.join(base_results_dir, f"retrieval_eval_metrics_{timestamp}.json")
+    evaluator.save_results(output_file_metrics)
+
     print("\n4. Generating visualizations...\n" + "="*50)
     # Generate visualizations
-    visualize_results(output_file)
-    
+    if os.path.exists(output_file_metrics): # Check if the metrics file exists before visualizing
+        visualize_results(output_file_metrics)
+    else:
+        print(f"Metrics file {output_file_metrics} not found, skipping visualization.")
+
+
     return evaluator.get_all_aggregated_metrics()

@@ -151,12 +151,32 @@ class RetrievalEvaluator:
         query_metrics['reciprocal_rank'] = self._reciprocal_rank(retrieved_doc_ids, relevant_doc_ids)
         
         return query_metrics
+    
+    def _save_system_retrieved_data(self, system_name: str, data_to_save: List[Dict], output_dir: str):
+        """
+        Saves all retrieved document data for a single system (experiment) to one JSON file.
+        """
+        os.makedirs(output_dir, exist_ok=True) # Ensure the directory exists
+        # Sanitize system_name for use in filename
+        safe_system_name = system_name.replace(' ', '_').replace('+', 'and')
+        file_path = os.path.join(output_dir, f"{safe_system_name}_retrieved_docs.json")
+        try:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(data_to_save, f, indent=2)
+            print(f"Saved all retrieved documents for system '{system_name}' to {file_path}")
+        except Exception as e:
+            print(f"Error saving retrieved documents for system '{system_name}' to {file_path}: {e}")
 
-    def evaluate_system(self, system_name: str, retrieval_function, 
-                        queries_to_evaluate: Dict[str, str], 
-                        relevance_judgments: Dict[str, Set[str]]):
+    # In your RetrievalEvaluator class in evaluation_script.py
+    def evaluate_system(self, system_name: str, retrieval_function,
+                        queries_to_evaluate: Dict[str, str],
+                        relevance_judgments: Dict[str, Set[str]],
+                        save_retrieved_docs: bool = False,  # <<< ADD THIS PARAMETER
+                        retrieved_docs_output_dir: str = "retrieved_docs_per_experiment"  # <<< ADD THIS PARAMETER
+                        ):
+        """Evaluates a single system."""
         print(f"\n--- Evaluating system: {system_name} ---")
-        
+
         if not queries_to_evaluate:
             print(f"No queries provided for evaluation of {system_name}. Skipping.")
             empty_metrics = {
@@ -172,42 +192,79 @@ class RetrievalEvaluator:
             return empty_metrics
 
         all_query_metrics_list = []
-        
+        system_retrieved_data_for_all_queries = [] # This was correctly initialized
+
         for query_id, query_text in tqdm(queries_to_evaluate.items(), desc=f"Queries for {system_name}", unit="query"):
             relevant_docs_for_query = relevance_judgments.get(query_id, set())
-            
+
             retrieved_docs_with_scores, timing_info = retrieval_function(query_text)
             retrieved_doc_ids = [doc['id'] for doc in retrieved_docs_with_scores]
 
             query_eval_metrics = self._calculate_metrics_for_query(retrieved_doc_ids, relevant_docs_for_query, timing_info)
-            query_eval_metrics['query_id'] = query_id 
+            query_eval_metrics['query_id'] = query_id
             all_query_metrics_list.append(query_eval_metrics)
 
-        # Aggregate metrics
-        aggregated_metrics = {'system_name': system_name, 'num_queries': len(queries_to_evaluate)}
-        # Corrected keys for aggregation to match what _calculate_metrics_for_query produces
-        aggregated_metrics['precision_at_k'] = {str(k): np.mean([m['precision_at_k'][str(k)] for m in all_query_metrics_list]) for k in self.k_values}
-        aggregated_metrics['recall_at_k'] = {str(k): np.mean([m['recall_at_k'][str(k)] for m in all_query_metrics_list]) for k in self.k_values}
-        aggregated_metrics['f1_score_at_k'] = {str(k): np.mean([m['f1_score_at_k'][str(k)] for m in all_query_metrics_list]) for k in self.k_values}
-        aggregated_metrics['ndcg_at_k'] = {str(k): np.mean([m['ndcg_at_k'][str(k)] for m in all_query_metrics_list]) for k in self.k_values}
-        aggregated_metrics['map'] = np.mean([m['average_precision'] for m in all_query_metrics_list])
-        aggregated_metrics['mrr'] = np.mean([m['reciprocal_rank'] for m in all_query_metrics_list])
-        aggregated_metrics['average_retrieval_time'] = np.mean([m['time_taken'] for m in all_query_metrics_list])
-        
-        self.results_agg[system_name] = aggregated_metrics 
+            # VVVVVV THIS IS THE CRUCIAL MISSING PART TO POPULATE THE DATA FOR SAVING VVVVVV
+            if save_retrieved_docs:
+                current_query_formatted_docs = []
+                for doc in retrieved_docs_with_scores: # Iterate through the actual retrieved docs with scores
+                    current_query_formatted_docs.append({
+                        "id": doc.get("id"),
+                        "score": doc.get("score"),
+                        # You might want to truncate text if it's very long to keep files manageable
+                        "text": doc.get("text", "")
+                    })
+                system_retrieved_data_for_all_queries.append({
+                    "query_id": query_id,
+                    "query_text": query_text,
+                    "retrieved_documents": current_query_formatted_docs
+                })
+            # ^^^^^^ END OF CRUCIAL MISSING PART ^^^^^^
 
+        # Aggregate metrics (Your existing aggregation logic seems fine)
+        aggregated_metrics = {'system_name': system_name, 'num_queries': len(queries_to_evaluate)}
+        if all_query_metrics_list: # Check if list is not empty to avoid errors on np.mean
+            aggregated_metrics['precision_at_k'] = {str(k): np.mean([m['precision_at_k'][str(k)] for m in all_query_metrics_list if str(k) in m['precision_at_k']]) for k in self.k_values}
+            aggregated_metrics['recall_at_k'] = {str(k): np.mean([m['recall_at_k'][str(k)] for m in all_query_metrics_list if str(k) in m['recall_at_k']]) for k in self.k_values}
+            aggregated_metrics['f1_score_at_k'] = {str(k): np.mean([m['f1_score_at_k'][str(k)] for m in all_query_metrics_list if str(k) in m['f1_score_at_k']]) for k in self.k_values}
+            aggregated_metrics['ndcg_at_k'] = {str(k): np.mean([m['ndcg_at_k'][str(k)] for m in all_query_metrics_list if str(k) in m['ndcg_at_k']]) for k in self.k_values}
+            aggregated_metrics['map'] = np.mean([m['average_precision'] for m in all_query_metrics_list])
+            aggregated_metrics['mrr'] = np.mean([m['reciprocal_rank'] for m in all_query_metrics_list])
+            aggregated_metrics['average_retrieval_time'] = np.mean([m['time_taken'] for m in all_query_metrics_list])
+        else: # Handle empty list case
+            for k_val in self.k_values:
+                k_str = str(k_val)
+                aggregated_metrics.setdefault('precision_at_k', {})[k_str] = np.nan
+                aggregated_metrics.setdefault('recall_at_k', {})[k_str] = np.nan
+                aggregated_metrics.setdefault('f1_score_at_k', {})[k_str] = np.nan
+                aggregated_metrics.setdefault('ndcg_at_k', {})[k_str] = np.nan
+            aggregated_metrics['map'] = np.nan
+            aggregated_metrics['mrr'] = np.nan
+            aggregated_metrics['average_retrieval_time'] = np.nan
+
+
+        self.results_agg[system_name] = aggregated_metrics
+
+        # Print aggregated metrics (your existing print logic)
         print(f"Results for {system_name}:")
         print(f"  MAP: {aggregated_metrics['map']:.4f}")
         print(f"  MRR: {aggregated_metrics['mrr']:.4f}")
-        for k_val_str in aggregated_metrics['precision_at_k']:
+        for k_val_str in aggregated_metrics['precision_at_k']: # Iterate through keys actually present
             k_int = int(k_val_str)
             print(f"  Metrics@K={k_int}:")
-            print(f"    P@{k_int}: {aggregated_metrics['precision_at_k'][k_val_str]:.4f}")
-            print(f"    R@{k_int}: {aggregated_metrics['recall_at_k'][k_val_str]:.4f}")
-            print(f"    F1@{k_int}: {aggregated_metrics['f1_score_at_k'][k_val_str]:.4f}")
-            print(f"    NDCG@{k_int}: {aggregated_metrics['ndcg_at_k'][k_val_str]:.4f}")
+            print(f"    P@{k_int}: {aggregated_metrics['precision_at_k'].get(k_val_str, np.nan):.4f}")
+            print(f"    R@{k_int}: {aggregated_metrics['recall_at_k'].get(k_val_str, np.nan):.4f}")
+            print(f"    F1@{k_int}: {aggregated_metrics['f1_score_at_k'].get(k_val_str, np.nan):.4f}")
+            print(f"    NDCG@{k_int}: {aggregated_metrics['ndcg_at_k'].get(k_val_str, np.nan):.4f}")
         print(f"  Avg. Time: {aggregated_metrics['average_retrieval_time']:.4f}s")
-        
+
+        # Call _save_system_retrieved_data if enabled and data exists
+        if save_retrieved_docs and system_retrieved_data_for_all_queries: # Check flag here
+            self._save_system_retrieved_data(system_name, system_retrieved_data_for_all_queries, retrieved_docs_output_dir) # <<< USE THE PARAMETER HERE
+        elif save_retrieved_docs:
+             print(f"No retrieved document data collected for system '{system_name}' to save.")
+
+
         return aggregated_metrics
 
     def get_all_aggregated_metrics(self):
