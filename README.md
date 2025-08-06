@@ -1,3 +1,5 @@
+![LegalMind](thumbnail.png)
+
 # LegalMind
 
 ## Overview
